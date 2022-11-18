@@ -67,7 +67,7 @@ include_once('views/main/navbar.php');
    
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
@@ -106,7 +106,7 @@ include_once('views/main/navbar.php');
                      
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
@@ -144,7 +144,7 @@ include_once('views/main/navbar.php');
                      </div>
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
@@ -181,7 +181,7 @@ include_once('views/main/navbar.php');
                      </div>
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
@@ -219,7 +219,7 @@ include_once('views/main/navbar.php');
                      </div>
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
@@ -230,26 +230,33 @@ include_once('views/main/navbar.php');
                      <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" style="height: 300px;" alt="..." />
                      <!-- Product details-->
                      <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="fw-bolder">Áo khoác</h5>
-                           <!-- Product price-->
-                           127.000đ - 221.000 đ
-                        </div>
-                        <!-- Rating -->
-                        <div class="star-block">
-                            <div class="text-center">
+                     <div class="text-center">
                             <!-- Product name-->
                             <h5 class="product-name fw-bolder">Áo sơ mi nam </h5>
                             <!-- Product price-->
                             <span class="red">99.000 VNĐ</span></span> <span class="money-unit"></span> 
                             <span class="text-muted text-decoration-line-through">170.000 VNĐ</span>
                             </div>
+                        <!-- Rating -->
+                        <div class="star-block">
+                        <div class="stars">
+                                 <input type="radio" id="five" name="rate" value="5">
+                                 <label for="five"></label>
+                                 <input type="radio" id="four" name="rate" value="4">
+                                 <label for="four"></label>
+                                 <input type="radio" id="three" name="rate" value="3">
+                                 <label for="three"></label>
+                                 <input type="radio" id="two" name="rate" value="2">
+                                 <label for="two"></label>
+                                 <input type="radio" id="one" name="rate" value="1">
+                                 <label for="one"></label>
+                              <!-- <span class="have-bought">Đã bán ffsdaf</span> -->
+                           </div>
                         </div>
                      </div>
                      <!-- Product actions-->
                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Xem thêm</a></div>
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=blog&action=index">Xem thêm</a></div>
                      </div>
                </div>
             </div>
