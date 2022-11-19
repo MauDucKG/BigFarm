@@ -1,0 +1,51 @@
+.stars-block{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+ .stars {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 80%;
+    color: white;
+ }
+ 
+ .stars input{
+    display: none;
+ }
+ 
+ .stars label {
+    float: right;
+    font-size: 30px;
+    color: lightgray;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+    border-radius: 10%;
+ }
+ 
+ .stars label::before{
+    content: '✩';
+ }
+ 
+ .stars input:checked ~ label {
+    color: gold;
+    text-shadow: 1px 1px #c60;
+ }
+ 
+ .stars:not(:checked) > label:hover,
+ .stars:not(:checked) > label:hover ~label
+ {
+    color: gold;
+ }
+ 
+ .stars input:checked > label:hover,
+ .stars input:checked > label:hover ~label
+ {
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+ }

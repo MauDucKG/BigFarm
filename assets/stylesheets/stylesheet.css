@@ -1,0 +1,78 @@
+.body-field {
+    margin-top: 55px;
+    background-color:    bisque; 
+ }
+ .body-field .field-1 {
+    color: black;
+ }
+ .body-field .field-1 .container {
+    border-radius: 5%;
+ }
+ .body-field .field-1 h4 {
+    border-radius: 5%;
+    background-color: gray;
+ }
+ #content-1{
+    background-color:  rgb(152, 141, 143);
+ }
+ 
+ 
+ .body-field .field-1 li:hover {
+    transform: scale(1.3);
+    background-color: pink;
+    border-style: double;
+ }
+ 
+ #unique {
+    margin: auto;
+    padding: 0px;
+ }
+ .body-field .field-2 {
+    background-color: rgb(193, 193, 224);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+ }
+ 
+ .body-field .field-2 .card-block {
+    margin: 20px;
+ }
+ .body-field .field-2 .card-block:hover{
+    transform: scale(1.1);
+    background-color: pink;
+    border-style: double;
+    border-radius: 5%;
+ }
+ 
+ .body-field .card-block{
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+ }
+ 
+ .body-field .card-header-custom {
+    font-weight: 700;
+    font-size: 1.2em;
+ }
+ 
+ .body-field .card-title {
+    font-weight: 700;
+    font-size: 1.5em;
+ }
+ 
+ #page-navigation {
+    padding: 30px;
+ }
+ 
+ 
+ .body-field .field-3 img{
+    border-radius: 5%;
+ }
+ 
+ .body-field .field-3{
+    border-radius: 2%;
+ }
+ .hihi {
+    background-color: rgb(152, 141, 143);
+ }
