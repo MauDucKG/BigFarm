@@ -1,0 +1,76 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #4d4643;
+}
+
+.imageChange {
+  max-width: 100px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* text */
+.red {
+  color:rgb(233, 37, 37);
+  font-weight: 550;
+}
+.green {
+  color: rgb(0, 255, 0);
+  font-weight: 550;
+}
+
+/* header */
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header .logo {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+#header .logo a{
+  font-size: 20px;
+  color: rgb(233, 37, 37);
+}
+#header .logo a span {
+  color: #1eee41;
+}
+#header .logo img {
+  max-height: 25px;
+}
+
+
+.navbar {
+  padding: 0;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
