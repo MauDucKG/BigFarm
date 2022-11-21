@@ -10,8 +10,10 @@
    <title>Products</title>
    <style>
       @media only screen and (max-width : 992px) {
+
       }
       @media only screen and (max-width : 575px) {
+
       }
       @media only screen and (max-width : 830px) {
          .stars label {
@@ -25,6 +27,7 @@
          #advertisement-product{
             margin-top: 120px;
          }
+
       }
   </style>
 </head>
@@ -106,6 +109,7 @@
          </div>
       </div>
    </div>
+
    <!-- Items -->
    <div class="container py-2">
       <div class="container px-4 px-lg-6 mt-4">
