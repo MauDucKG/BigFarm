@@ -27,7 +27,7 @@ class UserController extends BaseController
 		$password = $_POST['password'];
 		echo $fname . $lname . $age . $gender . $phone . $email . $password;
 		// Photo
-		$target_dir = "public/img/user/";
+		$target_dir = "assets/images/user/";
 		$path = $_FILES['fileToUpload']['name'];
 		$ext = pathinfo($path, PATHINFO_EXTENSION);
 		echo $ext;
@@ -67,7 +67,7 @@ class UserController extends BaseController
 		$phone = $_POST['phone'];
 		$urlcurrent = $_POST['img'];
 		// Photo
-		$target_dir = "public/img/user/";
+		$target_dir = "assets/images/user/";
 		$path = $_FILES['fileToUpload']['name'];
 		$ext = pathinfo($path, PATHINFO_EXTENSION);
 		$id = (string)date("Y_m_d_h_i_sa");
