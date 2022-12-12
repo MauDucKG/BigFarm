@@ -31,7 +31,7 @@
                   </form>
                </div>
                <div class="col-md-6 d-flex justify-content-end m-2">
-                  <button class="btn btn-outline-primary" type="submit">Tạo mới<i class="bi bi-plus-square-dotted m-2"></i></button>
+                  <button id="create-product" class="btn btn-outline-primary" type="button">Tạo mới<i class="bi bi-plus-square-dotted m-2"></i></button>
                </div>   
             </div>
 
@@ -60,6 +60,8 @@
                
                <?php
                   foreach ($products as $product){
+                  $temp = str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),'___', $product->content);
+                  echo "<script>console.log('$temp')</script>";
                ?>
                <tbody id="product-table-body">
 
@@ -79,7 +81,7 @@
                      <td class="price align-middle"><?php echo $product->price; ?> đ</td>
                      <td class="category text-center align-middle"><?php echo $product->description; ?></td>
                      <td class="recently-change text-center align-middle">
-                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo $product->img; ?>" ,"<?php echo str_replace("\n","___",$product->content);?>")'><i class="bi bi-eye-slash-fill" ></i></button>
+                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo $product->img; ?>" ,"<?php echo str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),"___", $product->content);?>")'><i class="bi bi-eye-slash-fill" ></i></button>
                      </td>
                   </tr>
 
@@ -90,34 +92,163 @@
                
 
                <!-- Action console when clicking a product -->
-
-               <!-- Console edit product -->
-               <div class="modal fade" id="edit-product-console" tabindex="-1" role="dialog" aria-labelledby="edit-product-console-title" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
+               <div class="modal fade" id="create-product-console" tabindex="-1" role="dialog" aria-labelledby="create-product-console-title" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
                      <div class="modal-content">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="edit-product-console-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                           <span aria-hidden="true">Hello Mn</span>
-                        </button>
+                           <span>
+                              <h5 class="modal-title" id="create-product-console-title">THÊM SẢN PHẨM</h5>
+                           </span>  
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true"><i class="bi bi-x-circle"></i></span>
+                           </button>
                         </div>
-                        <div class="modal-body">
-                        ...
-                        <p>
-                           fasfdsa
-                           fasfasfd
-                           ,fsadfa
-                           ,fadf
-
-                        </p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                        <form action="index.php?page=admin&controller=products&action=add" enctype="multipart/form-data" method="post">
+                           <div class="modal-body">
+                              <div class="form-group row">
+                                 <div class="col-8">
+                                    <div class="form-group row">
+                                       <label for='staticID' class="col-3 col-form-label">ID</label>
+                                       <div class="col-9">
+                                          <input type='text' readonly class="form-control-plaintext" id="staticID" name="id">
+                                       </div>
+                                    </div>
+                                    <div class="form-group row mt-2">
+                                       <label for='input-name' class="col-3 col-form-label">Tên sản phẩm:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-name" name="name">
+                                       </div>        
+                                    </div>
+                                    <div class="form-group row mt-2">
+                                       <label for='input-price' class="col-3 col-form-label">Giá tiền:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-price" value="" placeholder=".vnđ" name="price">
+                                       </div>        
+                                    </div>      
+                                    <div class="form-group row mt-2">
+                                       <label for='input-description' class="col-3 col-form-label">Mô tả ngắn:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-description" value="" placeholder="Loại sản phẩm" name="description">
+                                       </div>        
+                                    </div>                          
+                                    <div class="form-group row mt-2">
+                                       <label for='input-content-create' class="col-3 col-form-label">Nội dung:</label>
+                                       <div class="col-9">
+                                          <textarea class="form-control" id="input-content" rows="7" placeholder="Nội dung không quá 1000 từ" name="content"></textarea>
+                                       </div>                                       
+                                    </div>
+                                 </div>
+                                 <div class="col-4 text-center align-items-center">
+                                    <img id="sample-image" src="" alt="" class="border border-dark rounded-2" style="max-height: 200px; max-width: 200px;">
+                                    <label for="input-image">Ảnh minh họa</label>
+                                    <input type="file" class="form-control-file" id="input-image" name="fileToUpload">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button id="create-close" type="button" class="btn btn-danger text-dark" data-dismiss="modal">Close</button>
+                              <button id="create-submit" type="submit" class="btn btn-primary text-dark">Save changes</button>
+                           </div>
+                        </form>
                      </div>
                   </div>
                </div>
+
+
+
+               <!-- Console edit product -->
+               <div class="modal fade" id="edit-product-console" tabindex="-1" role="dialog" aria-labelledby="edit-product-console-title" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <span>
+                              <h5 class="modal-title" id="edit-product-console-title">CHỈNH SỬA SẢN PHẨM</h5>
+                           </span>  
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true"><i class="bi bi-x-circle"></i></span>
+                           </button>
+                        </div>
+                        <form action="index.php?page=admin&controller=products&action=edit" enctype="multipart/form-data" method="post">
+                           <div class="modal-body">
+                              <div class="form-group row">
+                                 <div class="col-8">
+                                    <div class="form-group row">
+                                       <label for='staticID' class="col-3 col-form-label">ID</label>
+                                       <div class="col-9">
+                                          <input type='text' readonly class="form-control-plaintext" id="staticID" name="id">
+                                       </div>
+                                    </div>
+                                    <div class="form-group row mt-2">
+                                       <label for='input-name' class="col-3 col-form-label">Tên sản phẩm:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-name" name="name">
+                                       </div>        
+                                    </div>
+                                    <div class="form-group row mt-2">
+                                       <label for='input-price' class="col-3 col-form-label">Giá tiền:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-price" value="" placeholder=".vnđ" name="price">
+                                       </div>        
+                                    </div>      
+                                    <div class="form-group row mt-2">
+                                       <label for='input-description' class="col-3 col-form-label">Mô tả ngắn:</label>
+                                       <div class="col-9">
+                                          <input type='text'  class="form-control" id="input-description" value="" placeholder="Loại sản phẩm" name="description">
+                                       </div>        
+                                    </div>                          
+                                    <div class="form-group row mt-2">
+                                       <label for='input-content-edit' class="col-3 col-form-label">Nội dung:</label>
+                                       <div class="col-9">
+                                          <textarea class="form-control" id="input-content-edit" rows="7" placeholder="Nội dung không quá 1000 từ" name="content"></textarea>
+                                       </div>                                       
+                                    </div>
+                                 </div>
+                                 <div class="col-4 text-center align-items-center">
+                                    <img id="sample-image" src="" alt="" class="border border-dark rounded-2" style="max-height: 200px; max-width: 200px;">
+                                    <label for="input-image">Ảnh minh họa</label>
+                                    <input type="file" class="form-control-file" id="input-image" name="fileToUpload">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button id="edit-close" type="button" class="btn btn-danger text-dark" data-dismiss="modal">Close</button>
+                              <button id="edit-submit"type="submit" class="btn btn-primary text-dark">Save changes</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="modal fade" id="delete-product-console" tabindex="-1" role="dialog" aria-labelledby="delete-product-console-title" aria-hidden="true">
+                  <div class="modal-dialog modal-lg" role="document">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <span>
+                              <h5 class="modal-title" id="delete-product-console-title">XÓA SẢN PHẨM</h5>
+                           </span>  
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true"><i class="bi bi-x-circle"></i></span>
+                           </button>
+                        </div>
+                        <form action="index.php?page=admin&controller=products&action=delete" enctype="multipart/form-data" method="post">
+                           <div class="modal-body align-items-center">
+                           <a href="#" class="flex flex-col items-center bg-white border rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                              <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg m-2 rounded-2" src="" alt="">
+                              <div class="flex flex-col justify-between p-4 leading-normal">
+                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"></h5>
+                                 <input type='text' readonly class="form-control-plaintext" id="staticID" name="id" style="display:none;">
+                                 <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Bạn có chắc chắn muốn xóa sản phẩm này không?? Sau khi xóa, mọi thông tin về sản phẩm này sẽ không còn lưu trữ trên hệ thống!!! :)</p>
+                              </div>
+                           </a>
+                           <div class="modal-footer">
+                              <button id="delete-close" type="button" class="btn btn-secondary text-dark" data-dismiss="modal">Hủy xóa</button>
+                              <button id="delete-submit"type="submit" class="btn btn-danger text-dark">Xóa</button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+
       
             </table> 
             <nav aria-label="Page navigation example">
@@ -139,7 +270,7 @@
 
 
          <!-- Bảng thông tin sản phẩm -->
-         <div id="product-infor" class="col-md-12 col-xl-4">
+         <div id="product-infor" class="col-md-12 col-xl-4 mt-2">
             <div class= "border border-primary rounded-2 p-3">
                <h4 class="text-center font-weight-bolder">Thông tin sản phẩm</h4>
                <div class="m-2">ID: <span id="id-infor" class="border border-primary rounded m-2 p-1"> #12313</span></div>
@@ -156,7 +287,7 @@
                <textarea id="content-infor" class="form-control mb-4" placeholder="Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè" rows="6" readonly></textarea>
                <button id="product-edit" type="button" class="font-weight-bold btn btn-success text-dark me-1" data-id='' data-name='' data-price='' data-description='' data-img='' data-content='' data-toggle="modal" data-target="#edit-product-console" disabled>Chỉnh sửa</button>
 
-               <button onclick="clearForm()" class="btn btn-outline-danger">Hủy</button>
+               <button id="product-delete" type="button" class="font-weight-bold btn btn-danger text-dark me-1" data-id='' data-name='' data-img='' data-toggle="modal" data-target="#delete-product-console" disabled>Xóa</button>
             </div>
 
          </div>
@@ -222,12 +353,16 @@
       content = content.replaceAll('___','\n');
       document.getElementById('content-infor').placeholder = content;
       document.getElementById('product-edit').disabled = false;
+      document.getElementById('product-delete').disabled = false;
       $('#product-edit').data('id', id);
       $('#product-edit').data('name', name);
       $('#product-edit').data('price', price);
       $('#product-edit').data('description', description);
       $('#product-edit').data('content', content);
       $('#product-edit').data('img', img);
+      $('#product-delete').data('id',id);
+      $('#product-delete').data('name', name);
+      $('#product-delete').data('img', img);
 
    }
    function makeDefault(){
@@ -237,15 +372,30 @@
       document.getElementById('description-infor').placeholder = "Loại sản phẩm";
       document.getElementById('content-infor').placeholder = "Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè";
       document.getElementById('product-edit').disabled = true;
+      document.getElementById('product-delete').disabled = true;
       $('#product-edit').data('id','');
       $('#product-edit').data('name','');
       $('#product-edit').data('price', '');
       $('#product-edit').data('description', '');
       $('#product-edit').data('content', '');
       $('#product-edit').data('img', '');
+      $('#product-delete').data('id','');
+      $('#product-delete').data('name', '');
+      $('#product-delete').data('img', '');
    }
+
+   $('#create-product').click(function(e){
+      $('#create-product-console').modal("show");
+   });
+   $('#create-product-console #create-submit').click(function(e){
+
+   });
+   $('#create-product-console #create-close').click(function(e){
+
+      $('#create-product-console').modal("hide");
+   });
    
-   $("#product-edit").click(function(){
+   $("#product-edit").click(function(e){
       var id = $(this).data('id');
       var name = $(this).data('name');
       var price = $(this).data('price');
@@ -253,8 +403,44 @@
       var content = $(this).data('content');
       var img = $(this).data('img');
       console.log('Hello');
-      $('#edit-product-console').show();
+      $('#edit-product-console').modal("show");
+      $('#edit-product-console #staticID').val(id);
+      $('#edit-product-console #input-name').val(name);
+      $('#edit-product-console #input-price').val(price);
+      $('#edit-product-console #input-description').val(description);
+      document.getElementById('input-content-edit').innerHTML = content;
+      $('#edit-product-console #sample-image').attr('src',img);
    });
+   $('#edit-product-console #edit-close').click(function(){
+      $('#edit-product-console #staticID').val('');
+      $('#edit-product-console #input-name').val('');
+      $('#edit-product-console #input-price').val('');
+      $('#edit-product-console #input-description').val('');
+      document.getElementById('input-content-edit').innerHTML = '';
+      $('#edit-product-console').modal("hide");
+   });
+   $('#edit-product-console #edit-submit').click(function(){
+
+   });
+
+   $('#product-delete').click(function(e){
+      var id = $(this).data('id');
+      var name = $(this).data('name');
+      var img = $(this).data('img');
+      $('#delete-product-console').modal("show");
+      $('#delete-product-console #staticID').val(id);
+      $('#delete-product-console img').attr('src', img);
+      $('#delete-product-console h5').html(name);
+   });
+
+   $('#delete-product-console #delete-close').click(function(){
+      $('#delete-product-console').modal("hide");
+   });
+
+   $('#delete-product-console #delete-submit').click(function(){
+      
+   });
+
 </script>  
 
    <script type="text/javascript">
