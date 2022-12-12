@@ -49,7 +49,7 @@
                   <!-- <th class="name mb-5">
                      Tên sản phẩm
                   </th> -->
-                  <th class="price mb-5">
+                  <th class="price mb-5" style="width: 15%;">
                      Mức giá
                   </th>
                   <th class="category mb-5 text-center">
@@ -67,7 +67,7 @@
                   <tr id="row-<?php echo $product->id;?>">
                      <td>
                         <div class="row align-items-center">
-                           <img class="col-3 rounded-2" src="https://cf.shopee.vn/file/508cf08952898b9e6e6fde494902dc4b" style="max-width: 100px;" alt="..." />
+                           <img class="col-3 rounded-2" src="/assignment/BigFarm/<?php echo $product->img;?>" style="max-width: 100px;" alt="..." />
                            <div class="col-7">
                               <p style="font-weight: bold;">
                                  <?php echo $product->name; ?>
@@ -79,7 +79,7 @@
                      <td class="price align-middle"><?php echo $product->price; ?> đ</td>
                      <td class="category text-center align-middle"><?php echo $product->description; ?></td>
                      <td class="recently-change text-center align-middle">
-                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo $product->content;?>")'><i class="bi bi-eye-slash-fill" ></i></button>
+                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo str_replace("\n","___",$product->content);?>")'><i class="bi bi-eye-slash-fill" ></i></button>
                      </td>
                   </tr>
 
@@ -88,6 +88,20 @@
                   ?>
                </tbody>
             </table> 
+            <nav aria-label="Page navigation example">
+               <ul class="pagination justify-content-center">
+
+                  <li class="page-item">
+                     <a class="page-link previous-page" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                     <a class="page-link .next-page" href="#">Next</a>
+                  </li>
+               </ul>
+            </nav>
          </div> 
 
 
@@ -107,8 +121,8 @@
                <input type="text" id="description-infor" class="form-control mb-4" placeholder="Loại sản phẩm" readonly>
 
                <label for="inputDescription">Nội dung chi tiết:</label>
-               <textarea id="content-infor" class="form-control mb-4" placeholder="Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè" readonly></textarea>
-               <button onclick="addProduct()" class="font-weight-bold btn btn-success me-1" id="addbtn" disabled>Chỉnh sửa</button>
+               <textarea id="content-infor" class="form-control mb-4" placeholder="Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè" rows="6" readonly></textarea>
+               <button id="product-edit" onclick="addProduct()" class="font-weight-bold btn btn-success me-1" id="addbtn" disabled>Chỉnh sửa</button>
 
                <button onclick="clearForm()" class="btn btn-outline-danger">Hủy</button>
             </div>
@@ -151,6 +165,7 @@
             }
          }
          displayProduct(id, name, price, description, content);
+         document.getElementById('product-edit').disabled = false;
       }
       else {
          child.classList.remove('bi-eye-fill');
@@ -164,11 +179,17 @@
       }
    }
    function displayProduct(id, name, price, description, content){
+      <?php 
+         foreach ($products as $product){
+         }
+      ?>
       document.getElementById('id-infor').innerHTML = id;
       document.getElementById('name-infor').placeholder = name;
       document.getElementById('price-infor').placeholder = price;
       document.getElementById('description-infor').placeholder = description;
+      content = content.replaceAll('___','\n');
       document.getElementById('content-infor').placeholder = content;
+      document.getElementById('product-edit').disabled = true;
 
    }
    function makeDefault(){
@@ -179,6 +200,80 @@
       document.getElementById('content-infor').placeholder = "Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè";
    }
 </script>  
+
+   <script type="text/javascript">
+      function getPageList(totalPages, page, maxLength){
+         function range(start, end){
+            return Array.from(Array(end - start + 1), (_, i) => i + start);
+         }
+
+         var sideWidth = maxLength < 9 ? 1 : 2;
+         var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+         var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+
+         if(totalPages <= maxLength){
+            return range(1, totalPages);
+         }
+
+         if(page <= maxLength - sideWidth - 1 - rightWidth){
+            return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+         }
+
+         if(page >= totalPages - sideWidth - 1 - rightWidth){
+            return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+         }
+
+         return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+      }
+
+      $(function(){
+      var numberOfItems = $("#product-table-body tr").length;
+      var limitPerPage = 5; //How many card items visible per a page
+      var totalPages = Math.ceil(numberOfItems / limitPerPage);
+      var paginationSize = 3; //How many page elements visible in the pagination
+      var currentPage;
+
+         function showPage(whichPage){
+            if(whichPage < 1 || whichPage > totalPages) return false;
+
+            currentPage = whichPage;
+
+            $("#product-table-body tr").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+
+            $(".pagination li").slice(1, -1).remove();
+
+            getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+               $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+               .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+               .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+            });
+
+            $(".previous-page").toggleClass("disable", currentPage === 1);
+            $(".next-page").toggleClass("disable", currentPage === totalPages);
+            return true;
+         }
+
+         $(".pagination").append(
+            $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+            $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+         );
+
+         $("#card-content").show();
+         showPage(1);
+
+         $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+            return showPage(+$(this).text());
+         });
+
+         $(".next-page").on("click", function(){
+            return showPage(currentPage + 1);
+         });
+
+         $(".previous-page").on("click", function(){
+            return showPage(currentPage - 1);
+         });
+      });
+   </script>
 
 
 

@@ -62,14 +62,16 @@
             <div id="card" class="col mb-3">
                <div class="card h-100 rounded-2">
                      <!-- Product image-->
-                     <img class="card-img-top" src="https://cf.shopee.vn/file/508cf08952898b9e6e6fde494902dc4b" style="height: 300px;" alt="..." />
+                     <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
                      <!-- Product details-->
                      <div class="card-body p-4">
                         <div class="text-center">
                            <!-- Product name-->
-                           <h5 class="product-name fw-bolder"><?php echo $product->content;?></h5>
+                           <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
                            <!-- Product price-->
-                           <?php echo $product->price;?><span class="money-unit">đ</span> 
+                           <?php 
+                              echo number_format($product->price, 0, '', ',');
+                           ?><span class="money-unit"> đ</span> 
                         </div>
                         <!-- Rating -->
                         <div class="text-center">
