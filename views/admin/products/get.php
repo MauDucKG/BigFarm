@@ -9,7 +9,7 @@
 <div class="container-fluid pl-0 pr-0"style="margin-top: 60px;">
    <div class="p-3 text-center bg-secondary text-white font-weight-bold">QUẢN LÝ SẢN PHẨM</div>
    <div class="row flex-xl-nowrap">
-      <div class="col-md-3 col-xl-2 bd-sidebar border-right border-primary">
+      <div class="col-12 col-md-3 col-xl-2 bd-sidebar border-right border-primary">
          <nav id="toc" data-toggle="toc">
             <ul class="nav navbar-nav">
                <a class="nav-link" href="#">Quản lý sản phẩm</a>
@@ -30,7 +30,7 @@
                      <button class="btn btn-primary text-primary" type="submit">Tìm</button>
                   </form>
                </div>
-               <div class="col-md-6 d-flex justify-content-end m-2">
+               <div class="col-md-7 d-flex justify-content-end">
                   <button class="btn btn-outline-primary" type="submit">Tạo mới<i class="bi bi-plus-square-dotted m-2"></i></button>
                </div>   
             </div>
@@ -79,7 +79,7 @@
                      <td class="price align-middle"><?php echo $product->price; ?> đ</td>
                      <td class="category text-center align-middle"><?php echo $product->description; ?></td>
                      <td class="recently-change text-center align-middle">
-                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo $product->img; ?>" ,"<?php echo str_replace("\n","___",$product->content);?>")'><i class="bi bi-eye-slash-fill" ></i></button>
+                        <button id="view_item<?php echo $product->id;?>" onclick='showProduct(this.id,<?php echo $product->id;?>,"<?php echo $product->name;?>",<?php echo $product->price;?>,"<?php echo $product->description;?>","<?php echo str_replace("\n","___",$product->content);?>")'><i class="bi bi-eye-slash-fill" ></i></button>
                      </td>
                   </tr>
 
@@ -87,38 +87,6 @@
                      }
                   ?>
                </tbody>
-               
-
-               <!-- Action console when clicking a product -->
-
-               <!-- Console edit product -->
-               <div class="modal fade" id="edit-product-console" tabindex="-1" role="dialog" aria-labelledby="edit-product-console-title" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                     <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="edit-product-console-title">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                           <span aria-hidden="true">Hello Mn</span>
-                        </button>
-                        </div>
-                        <div class="modal-body">
-                        ...
-                        <p>
-                           fasfdsa
-                           fasfasfd
-                           ,fsadfa
-                           ,fadf
-
-                        </p>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-      
             </table> 
             <nav aria-label="Page navigation example">
                <ul class="pagination justify-content-center">
@@ -154,7 +122,7 @@
 
                <label for="inputDescription">Nội dung chi tiết:</label>
                <textarea id="content-infor" class="form-control mb-4" placeholder="Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè" rows="6" readonly></textarea>
-               <button id="product-edit" type="button" class="font-weight-bold btn btn-success text-dark me-1" data-id='' data-name='' data-price='' data-description='' data-img='' data-content='' data-toggle="modal" data-target="#edit-product-console" disabled>Chỉnh sửa</button>
+               <button id="product-edit" onclick="addProduct()" class="font-weight-bold btn btn-success me-1" id="addbtn" disabled>Chỉnh sửa</button>
 
                <button onclick="clearForm()" class="btn btn-outline-danger">Hủy</button>
             </div>
@@ -179,8 +147,8 @@
 
 
 </div>
-<script type="text/javascript">
-   function showProduct(id_button, id, name, price, description, img, content){
+<script>
+   function showProduct(id_button, id, name, price, description, content){
       var parrent = document.getElementById(id_button);
       child = parrent.childNodes[0];
       
@@ -196,8 +164,8 @@
                eles[i].style.display = 'none';
             }
          }
-         displayProduct(id, name, price, description, img, content);
-         
+         displayProduct(id, name, price, description, content);
+         document.getElementById('product-edit').disabled = false;
       }
       else {
          child.classList.remove('bi-eye-fill');
@@ -206,11 +174,11 @@
             if(eles[i].id != 'undefined'){
                eles[i].style.display = '';
             }
-         }
+         } 
          makeDefault();        
       }
    }
-   function displayProduct(id, name, price, description, img, content){
+   function displayProduct(id, name, price, description, content){
       <?php 
          foreach ($products as $product){
          }
@@ -221,13 +189,7 @@
       document.getElementById('description-infor').placeholder = description;
       content = content.replaceAll('___','\n');
       document.getElementById('content-infor').placeholder = content;
-      document.getElementById('product-edit').disabled = false;
-      $('#product-edit').data('id', id);
-      $('#product-edit').data('name', name);
-      $('#product-edit').data('price', price);
-      $('#product-edit').data('description', description);
-      $('#product-edit').data('content', content);
-      $('#product-edit').data('img', img);
+      document.getElementById('product-edit').disabled = true;
 
    }
    function makeDefault(){
@@ -236,25 +198,7 @@
       document.getElementById('price-infor').placeholder = "Đơn vị vnđ";
       document.getElementById('description-infor').placeholder = "Loại sản phẩm";
       document.getElementById('content-infor').placeholder = "Những câu từ mỹ miều sẽ làm tăng giá trị sản phẩm lên nè";
-      document.getElementById('product-edit').disabled = true;
-      $('#product-edit').data('id','');
-      $('#product-edit').data('name','');
-      $('#product-edit').data('price', '');
-      $('#product-edit').data('description', '');
-      $('#product-edit').data('content', '');
-      $('#product-edit').data('img', '');
    }
-   
-   $("#product-edit").click(function(){
-      var id = $(this).data('id');
-      var name = $(this).data('name');
-      var price = $(this).data('price');
-      var description = $(this).data('description');
-      var content = $(this).data('content');
-      var img = $(this).data('img');
-      console.log('Hello');
-      $('#edit-product-console').show();
-   });
 </script>  
 
    <script type="text/javascript">
