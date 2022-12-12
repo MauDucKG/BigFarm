@@ -234,13 +234,13 @@
         </div>
         <div class="card--personal">
             <div class="card--personal-info">
-                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <img src="https://avatars.githubusercontent.com/u/100073936?s=400&u=60231bd3dda8030cce71da8822a9a3d849c450cb&v=4" alt="" class="card-img">
                 <h2 class="name">Phạm Hoàng Đức Huy</h2>
                 <p class="role">Developer</p>
                 <div class="card-social">
-                    <a href="#" class="facebook" class="facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/duchuy22902" class="facebook" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCmvIP_5mg49uGi5BSuRi9Nw" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/duchuykg" class="github"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <div class="card--personal-info">
@@ -254,7 +254,7 @@
                 </div>
             </div>
             <div class="card--personal-info">
-                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <img src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/108175787_190264442434866_2598380075968207340_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=irAaPc6wSOEAX-I-qHP&_nc_ht=scontent.fsgn4-1.fna&oh=00_AfDuI02ZK8dxZGiPICQ33c38foNIUdz6PkV-nFzSg8CISA&oe=64530A8B" alt="" class="card-img">
                 <h2 class="name">Vũ Đăng Khoa</h2>
                 <p class="role">Developer</p>
                 <div class="card-social">
@@ -264,7 +264,7 @@
                 </div>
             </div>
             <div class="card--personal-info">
-                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <img src="https://scontent.fsgn4-1.fna.fbcdn.net/v/t1.6435-9/105624595_577455742914753_5083683658656347572_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=paTUWwLi-EgAX-L01L7&_nc_ht=scontent.fsgn4-1.fna&oh=00_AfCs6NOaPOahPudlg92-D6vNFiXxzc47dDahnOu3_5TvmQ&oe=64531326" alt="" class="card-img">
                 <h2 class="name">Nguyễn Mậu Minh Đức</h2>
                 <p class="role">Developer</p>
                 <div class="card-social">
