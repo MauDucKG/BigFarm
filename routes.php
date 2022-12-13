@@ -23,7 +23,7 @@ $controllers = array(
   'archive' => ['index'],
   'contact' => ['index'],
   'blog' => ['index', 'comment', 'reply'],
-  'services' => ['index'],
+  'services' => ['index','get'],
   'register' => ['index', 'submit', 'editInfo']
   //'login' => ['index']
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.

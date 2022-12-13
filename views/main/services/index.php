@@ -1,7 +1,5 @@
 <?php 
    include_once('views/main/navbar.php');
-
-   
 ?>
 <main>
    <style>
@@ -59,45 +57,51 @@
                foreach ($products as $product){
             ?>
 
-            <div id="card" class="col mb-3">
-               <div class="card h-100 rounded-2">
-                     <!-- Product image-->
-                     <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
-                     <!-- Product details-->
-                     <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
-                           <!-- Product price-->
-                           <?php 
-                              echo number_format($product->price, 0, '', ',');
-                           ?><span class="money-unit"> đ</span> 
+            <form action="index.php?page=main&controller=services&action=edit" enctype="multipart/form-data" method="post">
+               <div id="card" class="col mb-3" onclick="postID(<?php echo $product->id;?>)">
+                  <div class="card h-100 rounded-2">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                           <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
+                              <!-- Product price-->
+                              <?php 
+                                 echo number_format($product->price, 0, '', ',');
+                              ?><span class="money-unit"> đ</span> 
+                           </div>
+                           <!-- Rating -->
+                           <div class="text-center">
+                              <span>
+                                 <i class="bi bi-star" value="1"></i>
+                                 <i class="bi bi-star" value="2"></i>
+                                 <i class="bi bi-star" value="3"></i>
+                                 <i class="bi bi-star" value="4"></i>
+                                 <i class="bi bi-star" value="5"></i>
+                                 <!-- <span>1</span> -->
+                              </span>
+                           </div>
+                           <div class="">
+                              <input type='text' readonly class="form-control-plaintext" id="staticID" name="id" placeholder="<?php echo $product->id; ?>">
+                              <button id="seemore-submit"type="submit" class="btn btn-success text-white text-center align-items-center">Xem thêm</button>
+                           </div>
+                           
+
+                           
                         </div>
-                        <!-- Rating -->
-                        <div class="text-center">
+      
+                        <!-- Product actions-->
+                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                            <span>
-                              <i class="bi bi-star" value="1"></i>
-                              <i class="bi bi-star" value="2"></i>
-                              <i class="bi bi-star" value="3"></i>
-                              <i class="bi bi-star" value="4"></i>
-                              <i class="bi bi-star" value="5"></i>
-                              <!-- <span>1</span> -->
+
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Mua</a></div>
                            </span>
-                        </div>
-
-                        
-                     </div>
-   
-                     <!-- Product actions-->
-                     <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <span>
-
-                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Mua</a></div>
-                        </span>
-                     </div> -->
+                        </div> -->
+                  </div>
                </div>
-            </div>
-
+            </form>
             <?php      
             }
             ?>
@@ -124,6 +128,16 @@
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
    <script type="text/javascript">
+      function postID(id){
+         $.post('/assignment/BigFarm/index.php?page=main&controller=services&action=get',
+         {
+            'id': id
+         },
+         function(data, status){
+            alert("Data: " +data + "\nStatus: " + status);
+         });
+         window.location.assign('/assignment/BigFarm/index.php?page=main&controller=services&action=get');
+      }
       function getPageList(totalPages, page, maxLength){
          function range(start, end){
             return Array.from(Array(end - start + 1), (_, i) => i + start);

@@ -24,7 +24,8 @@
 </head>
 <body>
    <!-- Header -->
-   <header id="navigation" class="container-fluid">
+   <!-- navbar-nav flex-row ml-md-auto d-none d-md-flex -->
+   <header id="navigation" class="container-fluid ">
       <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light">
          <div class="container">
             <a href="index.php" class="navbar-brand mb-0 h1">

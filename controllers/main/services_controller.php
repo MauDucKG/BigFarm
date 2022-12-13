@@ -15,4 +15,18 @@ class ServicesController extends BaseController
 		$data = array('products' => $products);
 		$this->render('index', $data);
 	}
+	public function get()
+	{
+		if(isset($_POST['id'])){
+			$id = $_POST['id'];
+			// $product = Product::get($id);
+			// $data = array('product' => $product);
+			$data = array('product' => $id);
+			$this->render('get', $data);
+		}
+		else {
+			echo "<script>console.log('false')</script>";
+		}
+
+	}
 }

@@ -16,12 +16,6 @@ class ProductsController extends BaseController
         $data = array('products' => $products);
         $this->render('index', $data);
 	}
-    public function get($id)
-    {
-        $product = Product::get($id);
-        $data = array('product' => $product);
-        $this->render('get', $data);
-    }
     public function add(){
         $id = (string)date("Y_m_d_h_i_sa");
         $fileuploadname = (string)$id;
