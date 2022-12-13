@@ -44,7 +44,7 @@ require_once('views/admin/content_layouts.php'); ?>
                     <div class="shadow p-2 rounded">
                         <div class="">
                             <!-- Button trigger modal-->
-                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#addUserModal">Thêm mới</button>
+                            <button class="btn btn-primary mb-2" type="button" data-bs-toggle="modal" data-bs-target="#addUserModal">Thêm mới</button>
                             <!-- Modal-->
                             <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -115,7 +115,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <input class="form-control my-2" type="password" placeholder="Mật khẩu" name="password" required/>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label>Ảnh đại diện</label>
+                                                    <label>Ảnh đại diện</label>&nbsp
                                                     <input type="file" class="form-control my-2" name="fileToUpload" id="fileToUpload" required>
                                                 </div>
 
@@ -145,7 +145,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                     foreach ($user as $user) {
                                         echo "<tr class='text-center'>";
                                         echo "<td class='align-middle'>" . $index++ . "</td>";
-                                        echo "<td><img src='$user->profile_photo' class='mb-4 border rounded-circle p-1' width='72' height='72'></td>";
+                                        echo "<td><img src='$user->profile_photo' class='border rounded-circle p-1' width='72' height='72'></td>";
                                         echo "<td class='align-middle'>" . $user->fname . "</td>";
                                         echo "<td class='align-middle'>" . $user->lname . "</td>";
                                         echo "<td class='align-middle'>
