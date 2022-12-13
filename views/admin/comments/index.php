@@ -29,7 +29,7 @@ require_once('views/admin/content_layouts.php'); ?>
         <div class="container-fluid row">
             <div class="my-3">
                 <p class="row">
-                <h1 class="text-center">Quản lý Khách hàng</h1>
+                <h1 class="text-center">Quản lý Bình luận</h1>
                 </p>
             </div>
         </div>
@@ -78,7 +78,7 @@ require_once('views/admin/content_layouts.php'); ?>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <table id="tab-comment" class="table table-bordered table-striped" style="margin-top:6px;">
+                                    <table id="tab-comment" class="table table-bordered table-striped shadow">
                                         <thead>
                                             <tr class="text-center">
                                                 <th>STT</th>

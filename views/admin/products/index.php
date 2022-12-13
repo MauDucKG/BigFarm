@@ -166,7 +166,6 @@ require_once('views/admin/content_layouts.php'); ?>
                 </div>
             </div>
         </div>
-</div>
 </section>
 
 
