@@ -188,7 +188,7 @@
                      <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
@@ -202,7 +202,7 @@
                      <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
@@ -216,7 +216,7 @@
                      <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
@@ -230,7 +230,7 @@
                      <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7">
+                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
