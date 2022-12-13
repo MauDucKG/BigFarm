@@ -178,8 +178,8 @@
                <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-light"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI?</strong>
                </h1>
          </div>
-         <div class="col-12 col-lg-3 col-md-6">
-               <div class="card" style="height: 300px; background-color: sandybrown;">
+         <div class="col-12 col-lg-2 col-md-6">
+               <div class="card  p-2" style="height: 300px; background-color: sandybrown;">
                   <h3 class=" "><strong class="m-5">
                            1</strong></h3>
                   <h2 class=" ">
@@ -192,7 +192,7 @@
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
-         <div class="col-12 col-lg-3 col-md-6">
+         <div class="col-12 col-lg-2 col-md-6">
                <div class="card" style="height: 300px; background-color: deepskyblue;">
                   <h3 class=" "><strong class="m-5">
                            2</strong></h3>
@@ -206,7 +206,7 @@
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
-         <div class="col-12 col-lg-3 col-md-6">
+         <div class="col-12 col-lg-2 col-md-6">
                <div class="card" style="height: 300px; background-color: darkseagreen;">
                   <h3 class=" "><strong class="m-5">
                            3</strong></h3>
@@ -220,7 +220,7 @@
                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
                </div>
          </div>
-         <div class="col-12 col-lg-3 col-md-6">
+         <div class="col-12 col-lg-2 col-md-6">
                <div class="card" style="height: 300px; background-color: hotpink;">
                   <h3 class=" "><strong class="m-5">
                            4</strong></h3>

@@ -84,7 +84,7 @@
                               </span>
                            </div>
                            <div class="">
-                              <input type='text' readonly class="form-control-plaintext" id="staticID" name="id" placeholder="<?php echo $product->id; ?>">
+                              <input type='hidden' readonly class="form-control-plaintext" id="staticID" name="id" placeholder="<?php echo $product->id; ?>">
                               <button id="seemore-submit"type="submit" class="btn btn-success text-white text-center align-items-center">Xem thêm</button>
                            </div>
                            
