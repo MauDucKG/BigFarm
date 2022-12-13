@@ -87,7 +87,6 @@ include_once('views/main/navbar.php');
          
       </div>
    </div>
- 
    <?php
 include_once('views/main/footer.php');
 ?>
