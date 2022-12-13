@@ -55,8 +55,8 @@
                         </ul>
                         <li class="mt-2 fw-bold">Mô tả:</li>
                         <ul>
-                            <li class="mt-2">Phù hợp với các bạn Nam có hình thể cân đối, thanh mãnh. Nhưng đối với các bạn Nam có thân hình to thì có thể chọn lớn hơn 1-2 size bạn nhé. Sản phẩm tích hợp với mọi thời tiết</li>
-                            <li class="mt-2">Các bạn Nam có thể đi kèm với các sản phẩm quần jean / quần tây / quần short / áo khoác ... vừa cá tính, vừa năng động không kém phần lịch sự.</li>           
+                            <li class="mt-2">'. $product->description.'</li>
+                            <li class="mt-2">'. $product->content .'</li>           
                         </ul>
                         </ul>        
                     </div>
