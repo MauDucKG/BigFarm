@@ -103,8 +103,8 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <td>
                                                      " .  $product->description . "
                                                     </td>
-                                                    <td>
-                                                       " . $product->content . "
+                                                    <td class>
+                                                       " . str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),'<br><br>',$product->content). "
                                                     </td>
                                                     <td >
                                                         <img style=\"width: 60px; height:35px;\" src='$product->img'>
