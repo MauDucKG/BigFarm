@@ -134,7 +134,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/assignment/BigFarm/assets/images/DHuy.jpg" style="" alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/DHuy.jpg"  alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -151,7 +151,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/assignment/BigFarm/assets/images/DHuy.jpg" style="" alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/DHuy.jpg" style="" alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -175,66 +175,64 @@
 
       <div class="row p-4">
          <div class="col-12">
-               <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-light"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI?</strong>
+               <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-light"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
                </h1>
          </div>
          <div class="col-12 col-lg-3 col-md-6">
-               <div class="card" style="height: 300px; background-color: sandybrown;">
+               <div class="card rounded-2"  style="background-color: sandybrown;">
                   <h3 class=" "><strong class="m-5">
                            1</strong></h3>
                   <h2 class=" ">
                      <strong>
                      </strong>
-                     <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
+                     <div class="align-middle m-2"><strong>Tư vấn </strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
-                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
+                  <img class="rounded-bottom" src="/BigFarm/assets/images/consulting.jpg" alt="tư vấn thời trang">
                </div>
+               <div style="height: 30px;"></div>
          </div>
          <div class="col-12 col-lg-3 col-md-6">
-               <div class="card" style="height: 300px; background-color: deepskyblue;">
+               <div class="card rounded-2"  style="background-color: deepskyblue;">
                   <h3 class=" "><strong class="m-5">
                            2</strong></h3>
                   <h2 class=" ">
                      <strong>
                      </strong>
-                     <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
+                     <div class="align-middle m-2"><strong>Thiết kế</strong></div>
                   </h2>
-
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
-                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
+                  <img class="rounded-bottom" src="/BigFarm/assets/images/designing.jpg" alt="thiết kế thời trang">
                </div>
+               <div style="height: 30px;"></div>
          </div>
          <div class="col-12 col-lg-3 col-md-6">
-               <div class="card" style="height: 300px; background-color: darkseagreen;">
-                  <h3 class=" "><strong class="m-5">
-                           3</strong></h3>
-                  <h2 class=" ">
-                     <strong>
-                     </strong>
-                     <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
-                  </h2>
+            <div class="card rounded-2"  style="background-color: darkseagreen;">
+               <h3 class=" "><strong class="m-5">
+                        3</strong></h3>
+               <h2 class=" ">
+                  <strong>
+                  </strong>
+                  <div class="align-middle m-2"><strong>Sale Marketing</strong></div>
+               </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
-                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
-               </div>
+               <img class="rounded-bottom" src="/BigFarm/assets/images/sale.jpg" alt="thiết kế thời trang" stlye="max-height: 195px;">
+            </div>
+            <div style="height: 30px;"></div>
          </div>
          <div class="col-12 col-lg-3 col-md-6">
-               <div class="card" style="height: 300px; background-color: hotpink;">
+               <div class="card rounded-2"  style="background-color: sandybrown;">
                   <h3 class=" "><strong class="m-5">
                            4</strong></h3>
                   <h2 class=" ">
                      <strong>
                      </strong>
-                     <div class="align-middle"><strong>Tư vấn thời trang</strong></div>
+                     <div class="align-middle m-2"><strong>Hóa trang</strong></div>
                   </h2>
 
-                  <p class="mbr-text mbr-white mbr-fonts-style display-7 m-2">
-                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore doloremque libero asperiores atque, repellat harum numquam, perspiciatis in dolores fugit quia, exercitationem distinctio molestiae et rem voluptate aspernatur voluptatem quae!</p>
+                  <img class="rounded-bottom" src="/BigFarm/assets/images/consulting.jpg" alt="tư vấn thời trang">
                </div>
+               <div style="height: 30px;"></div>
          </div>
-      </div>
    </div>
 </section>
 
