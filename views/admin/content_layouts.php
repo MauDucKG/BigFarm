@@ -8,7 +8,7 @@
 		</button>
 		<div class="navbar-nav">
 			<div class="nav-item text-nowrap">
-				<a class="nav-link px-3" href="#" id="title">Trang quản lý của Admintrator</a>
+				<a class="nav-link px-3" href="#" id="title">Admintrator</a>
 			</div>
 		</div>
 		<div class="navbar-nav">
@@ -18,7 +18,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-				<div class="position-sticky pt-3 sidebar-sticky">
+				<div class="position-sticky pt-2 sidebar-sticky">
 					<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-1 mb-1 text-muted text-uppercase">
 						<span>Quản lý thành viên</span>
 						<i class="link-secondary" href="#" aria-label="Add a new report">

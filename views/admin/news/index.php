@@ -63,11 +63,11 @@ require_once('views/admin/content_layouts.php'); ?>
                             <table id="tab-new" class="table table-bordered table-striped shadow">
                                 <thead>
                                     <tr class="text-center">
-                                        <th scope="col">STT</th>
-                                        <th scope="col">Trạng thái</th>
-                                        <th scope="col">Ngày </th>
-                                        <th scope="col">Mô tả</th>
-                                        <th scope="col">Nội dung</th>
+                                        <th scope="col" class="d-none d-lg-block d-print-block">STT</th>
+                                        <th scope="col" class="d-none d-lg-block d-print-block">Trạng thái</th>
+                                        <th scope="col" class="d-none d-lg-block d-print-block">Ngày </th>
+                                        <th scope="col" class="d-none d-lg-block d-print-block">Mô tả</th>
+                                        <th scope="col" class="d-none d-lg-block d-print-block">Nội dung</th>
                                         <th scope="col">Tiêu đề</th>
                                         <th scope="col">Thao tác</th>
                                     </tr>
@@ -82,25 +82,25 @@ require_once('views/admin/content_layouts.php'); ?>
                                         $button = ($new->status) ? "<button class=\"btn-hide btn btn-danger btn-xs\" data-bs-target='#HideNewModal' data-bs-toggle='modal' data-bs-id='$new->id' >Post</button>" : "<button class=\"btn-hide btn btn-primary btn-xs\" data-bs-target='#HideNewModal' data-bs-toggle='modal' data-bs-id='$new->id' >Hide</button>";
                                         echo
                                         "<tr >
-                                                    <td class=\"text-center\">"
+                                                    <td class=\"d-none d-lg-block d-print-block\">"
                                             . $index .
                                             "</td>
-                                                    <td class=\"text-center\">
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                        " .  $status . "
                                                     </td>
-                                                    <td class=\"text-center\">
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                       " .  $new->date . "
                                                     </td>   
-                                                    <td>
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                      " .  $new->description . "
                                                     </td> 
-                                                    <td>
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                        " . $new->content . "
                                                     </td>   
                                                     <td>
                                                        " . $new->title . "
                                                     </td    >       
-                                                    <td style=\"width:150px;\" class=\"text-center\"> " .
+                                                    <td class=\"text-center\"> " .
                                             $button . "
                                                     <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-bs-id='$new->id'  data-bs-description='$new->description' data-bs-content='$new->content' data-bs-title='$new->title' data-bs-target='#EditNewModal' data-bs-toggle='modal'>Edit</button>
                                                     <button class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-bs-id='$new->id' data-bs-target='#DeleteNewModal' data-bs-toggle='modal'>Xóa</button>

@@ -1,3 +1,7 @@
+DROP database IF EXISTS web;
+CREATE DATABASE web;
+USE web;
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
@@ -144,9 +148,238 @@ INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`, `
 (8, 208000, 'Quần đùi thể thao nam GYMKAI, quần short 2 lớp, lót legging lửng, thoải mái vận động', 'Quần lửng nam', 'QUẦN ĐÙI THỂ THAO NAM GYMKAI, QUẦN SHORT 2 LỚP, LÓT LEGGING LỬNG, THOẢI MÁI VẬN ĐỘNG\n- Quần với thiết kế 2 lớp chuyên dụng với lớp trong là quần legging lửng may liền với quần tập gym chắc chắn bên ngoài.\n- Chất liệu:\n+ Vải ngoài: 100% Polyester Microfiber\n+ Vải trong : 95% Polyester 5% Spandex\n- Thiết kế 2 lớp chuyên dụng phù hợp với đặc tính vận động khi tập luyện hoặc tham gia hoạt động thể thao.\n- Lớp trong với chất liệu thun lạnh co giãn 4 chiều hỗ trợ bó cơ khi tập luyện và vận động, lớp vải ngoài thông hơi thấm hút mồ hôi cực tốt.\n- Quần ngoài form ngắn trên gối mang đến vẻ ngoài mạnh mẽ, nam tính khi vận động\n- Chất liệu quần đạt tiêu chuẩn xuất khẩu không xù lông, không bai nhão, không phai màu\n- Quần có 2 màu : Đen và Xám \n- Quần short thể thao nam 2 lớp cao cấp được thiết kế theo đúng form chuẩn của nam giới Việt Nam.\n- Thích hợp chơi thể thao, chạy bộ, tập gym, chơi bóng rổ, bóng chuyền, mặc nhà, đi chơi dạo phố,...\n- Nơi sản xuất : được thiết kế và may sản xuất trực tiếp tại Việt Nam.', 'public/img/products/d80c30fde4bfcc552714f0fcd95ff469.png', 16),
 (9, 175000, 'Quần lửng nam Fasvin T21438.HN vải gió co giãn mềm mát tiện dụng mặc nhà và thể thao', 'Quần lửng nam', '=>  Các shop có thương hiệu đều luôn giữ gìn uy tín của mình. Đến với Fasvin bạn cũng sẽ được phục vụ tận tình chu đáo.\n\n=>  Quần lửng nam Fasvin T21438.HN được chế tạo tại nhà máy của FASVIN với quy trình thu hóa nghiệm ngặt. Các sản phẩm đều được những người thợ lâu năm trong nghề làm ra một cách cẩn thận và chắc chắn. Quần rất đa dụng có thể mặc đi chơi, thể thao hay mặc nhà. \n\n* KIỂU DÁNG : Quần lửng nam thể thao Fasvin có thiết kế dáng lửng dài đến đầu gối, dài hơn các mẫu quần short thường khoảng 5 cm tạo cảm giác  khoẻ khoắn, năng động nhưng không kém phần lịch sự. Quần có thiết kế đơn giản phù hợp với nhiều lứa tuổi từ thanh niên đến trung niên. Quần lửng thể thao Fasvin được may vừa vặn đứng dáng nên tiện dụng  đi chơi  thể thao, dạo phố hay mặc nhà.\n\n*CHẤT  LIỆU : Vải gió chun thể thao co giãn 4 chiều (95% Polyester + 5% spandex) thoải mái mềm mát. Đây là loại vải dệt thoi chứ không phải dệt kim nên đứng dáng và lịch sự có thể đi chơi hay mặc nhà tiếp khách. Chất vải thoáng mát và bền chắc thích hợp các hoạt động mạnh mẽ. \n\n* GIÁ CẢ : Chúng tôi luôn không ngừng cải tiến để có thể tạo ra những sản phẩm có chất lượng tốt với giá cả phải chăng nhất. Hơn nữa luôn có các chương trình khuyến mại dành cho quý khách dùng thử và trải nghiệm sản phẩm mới.\n\n* CHẤT LƯỢNG: Quần lửng nam đã được kiểm định chất lượng bởi cục tiêu chuẩn chất lượng và có tem hợp quy được dán trên thẻ bài.\n\n* BẢO QUẢN VÀ SỬ DỤNG : Sản phẩm có thể giặt máy, nhanh khô và không bị bạc màu. Đặc biệt nếu bạn là người bận rộn, bạn không cần là lượt trước khi mặc vì vải đã được tích hợp công nghệ chống nhăn, chống nhàu.\n', 'public/img/products/5472f307a0db884dadb06f5d9010d5aa.png', 18),
 (10, 398000, 'Quần Ngố Kaki Nam Túi Hộp Lửng GENVIET Basic Đơn Giản T1303K1026', 'Quần lửng nam', 'CHÍNH SÁCH MUA HÀNG: \n+ Hỗ trợ đổi hàng với những sản phẩm bị lỗi do nhà sản xuất, hoặc những sản phẩm giảm giá dưới 50% mà không vừa size số.\n+ Inbox trực tiếp để GENVIET tư vấn size và giải đáp các vấn đề bạn đang quan tâm nhé.\n+ Bạn nhận được sản phẩm, vui lòng đánh giá giúp GENVIET nha.\n- Chỉ áp dụng đổi với sản phẩm mua nguyên giá.\n- Không áp dụng đổi đối với hàng khuyến mại, hàng giảm giá hoặc mua trong chương trình ưu đãi khác.\n- Vì lý do sức khỏe, không đổi trả quần áo lót, phụ kiện.\n- Sản phẩm chưa qua sử dụng, còn nguyên tem mác, thẻ bài và kèm hóa đơn hoặc biên lai vận chuyển.\n------------------------------------------------------\nHƯỚNG DẪN GIẶT ỦI\n- Không giặt tẩy bằng các chất tẩy rửa mạnh\n- Không ngâm nước quá lâu\n- Không nên ngâm và giặt chung với sản phẩm khác\n- Cách giặt đồ: Lấy 1-2 giọt sữa tắm, dầu gội đầu… đánh bông lên, cho sản phẩm vào -bóp nhẹ, rũ qua sau đó rũ lại bằng nước sạch rồi phơi lên luôn, tránh ngâm lâu.\n- Với những sản phẩm chất liệu ren, có phụ kiện không nên giặt sản phẩm cùng với các sản phẩm cầu kì khác như: Có móc, có khóa cứng, có nhiều họa tiết …. sẽ làm ảnh hưởng đến chất liệu sản phẩm. (Sản phẩm ren và lưới hoặc vải mềm mỏng nên giặt bằng tay, nếu giặt máy vui lòng bỏ vào túi lưới để tránh làm hư sợi vải)\n- Đối với sản phẩm có chất co giãn mạnh, khi phơi nên phơi ngang, lộn mặt trái sản phẩm khi phơi\n- Nên phơi quần áo trong bóng mát, không nên phơi dưới ánh nắng gắt quá lâu tránh mất màu, giòn và rút sợi vải\n- Ủi sản phẩm ở nhiệt độ vừa phải.\n------------------------------------------------------\nMÔ TẢ SẢN PHẨM\n T1303K1026 - Quần Ngố GENVIET Kaki Nam Túi Hộp\n- Chất liệu: Kaki \n-Màu Sắc: hồng đất, xanh ghi, xanh rêu\n-Kích cỡ: 27 đến 34\nSản phẩm được thiết kế độc quyền bởi thương hiệu thời trang GENVIET  với hệ thống 80 showrooms trên toàn quốc với thương hiệu uy tín, sản phẩm chất lượng mà mang lại vẻ đẹp tuyệt đối cho bạn. GENVIET tin rằng sẽ đem lại sự trải nghiệm tuyệt vời cho các bạn khi sử dụng sản phẩm và dịch vụ của GENVIET\n', 'public/img/products/fcdf27ac2a8dc95fcd016f66901213d2.png', 20),
-(11, 68000, 'váy trắng tiểu thư trễ vai tay bồng dáng dài hai lớp, đầm trắng dự tiệc bánh bèo', 'váy nữ', '\nváy trễ vai trắng tay bồng dáng dài, đầm trễ vai tiểu thư dự tiệc màu trắng điệu đà\n\n màu trắng\n\nFree sz < 63kg \n\n\n❤️❤️ vblà xưởng may với niềm đam mê mãnh liệt về thiết kế, và phương châm sản phẩm mang giá trị sử dụng cao cho khách hàng , thảo nguyên cũng luôn hướng tới giá trị cốt lõi và bền vững dựa trên cơ sở lợi ích cho khách hàng luôn là hàng đầu .. ! Và rất mong được sự ủng hộ và đặt niềm tin bên shop.\n\nTrân trọng và cảm ơn rất nhiều !! Các khách hàng yêu quý của shop 😘\n', 'public/img/products/4cb7898954c4dc291ef1ad30d820225e.png', 20);
+(11, 68000, 'váy trắng tiểu thư trễ vai tay bồng dáng dài hai lớp, đầm trắng dự tiệc bánh bèo', 'váy nữ', '\nváy trễ vai trắng tay bồng dáng dài, đầm trễ vai tiểu thư dự tiệc màu trắng điệu đà\n\n màu trắng\n\nFree sz < 63kg \n\n\n❤️❤️ vblà xưởng may với niềm đam mê mãnh liệt về thiết kế, và phương châm sản phẩm mang giá trị sử dụng cao cho khách hàng , thảo nguyên cũng luôn hướng tới giá trị cốt lõi và bền vững dựa trên cơ sở lợi ích cho khách hàng luôn là hàng đầu .. ! Và rất mong được sự ủng hộ và đặt niềm tin bên shop.\n\nTrân trọng và cảm ơn rất nhiều !! Các khách hàng yêu quý của shop 😘\n', 'public/img/products/4cb7898954c4dc291ef1ad30d820225e.png', 20),
+(12, 109000, '[Mã BMLTA50 giảm đến 50K đơn 99K] Áo thun ba lỗ nam thể thao AJEKA, thun lạnh co giãn 4 chiều', 'áo nam', 
+'Sản phẩm áo thun nam ba lỗ mang đến cho người mặc cảm giác năng động khỏe khoắn,áo phông thun lạnh 3 lỗ được may từ vải thun lạnh cao cấp mềm mịn, Áo thun nam ba lỗ có đủ bảng màu cực hot, giúp bạn thêm nhiều sự lựa chọn  
 
--- --------------------------------------------------------
+. 
+
+- Chất liệu thun lạnh cao cấp, co giãn 4 chiều  thấm hút mồ hôi tốt, phù hợp các hoạt động thể thao, Gym, yoga, đá bóng, 
+
+- Tỷ mỉ đến từng đường chỉ may, logo 3D nổi chắc chắn cực sang.
+
+- Bảng màu cực cá tính, bền màu,  chống nhăn,thấm hút cực tốt.
+
+- Full size từ M – L – XL – XXL-3XL.. chuẩn size theo form người Việt
+
+
+
+*CAM KẾT :
+
+-  Bảo hành 30 ngày  ( 1 đổi 1)  với đường may, túi khóa và độ bền của vải
+
+-  Sẵn sàng nhận lại hàng nếu Quý khách không hài lòng và hoàn lại tiền 100%
+
+-  Cam kết chất lượng và mẫu mã sản phẩm giống với hình ảnh
+
+-  Hoàn tiền hoặc đổi hàng ngay lập tức nếu sản phẩm bị lỗi do sơ suất của nhà sản xuất 
+
+-  Cam kết được đổi hàng trong vòng 30 ngày. (Sản phẩm còn nguyên tem mác và chưa sử dụng )
+
+ 🚛 FREESHIP EXTRA ĐƠN TỪ 50K.
+
+Hướng dẫn chọn size 
+
+Size M : 51-60kg - Cao < 1m65
+
+Size L : 61-70 kg - 1m66<Cao< 1m70 
+
+Size XL : 71- 80kg - 1m74<Cao< 1m75
+
+Size 2XL : 81-90 kg - Cao> 1m7
+
+Size 3XL : 91-98 kg - Cao >1m7', 
+'public/img/products/48a84ebf054c419e102d419fda034dd4.png',
+5),
+(13, 110000, 'Áo croptop nữ sát nách ba lỗ thun không tay kiểu ôm body tank top vải cotton co giãn tốt', 'áo nữ', 
+'👉 👉 THÔNG TIN SẢN PHẨM: 
+Áo ba lỗ croptop nữ  dáng áo 3 lỗ ôm chất liệu thun cotton 100% co dãn mạnh.
+-------------------------
+-Chất liệu : Thun cotton co giãn 4 chiều loại cao cấp dày dặn nhất, rất mát ạ.
+* Lưu ý: 
++Tuỳ đợt hàng độ dày mỏng của các màu sẽ khác nhau ( <10% ) vẫn đảm bảo chất lượng cao cấp nhất ạ.
++Chất liệu  cotton nên sẽ có sợi bông ạ.
+
+-Màu sắc : Trắng - Đen - Vàng Đậm - Muối Tiêu - Xanh Ngọc - Đỏ Cam - Nâu - Đỏ Đô - Màu Ngẫu Nhiên( Màu sắc có thể chênh lệch so với thực tế 5% do ánh sáng và các thiết bị hiển thị màu khác nhau )
+
+-Size : Freesize 40-55kg
+
+-Kiểu dáng : Dáng áo ba lỗ croptop ôm, chất liệu 100% cotton co dãn 4 chiều cực tốt, dày dặn và mát.
+Có thể phối với quần short ngắn, đóng thùng, áo Cardigan, Blazer,... rất năng động và cá tính ạ
+--------------------------
+
+* Lưu ý: 
++Thông số áo là thành phẩm, chất co dãn cực tốt nên dễ fix vừa dáng.
++Áo dáng ôm croptop, các chị em thích mặc ôm thì chọn size thông số vừa người nhé ạ.
+----------------------------
+Chỉ có tại ao _thun_vdr: 
+
++ Cam kết chịu trách nhiệm với mỗi sản phẩm bán ra, Miễn phí đổi trả hàng lỗi trong thời gian sớm nhất ( Hy hữu thôi chứ  ao _thun_vdr   kiểm hàng kĩ lắm ahihi )
+
+ Lưu ý:  Hàng đổi phải còn nguyên tag, mạc, bao bì; chưa có dấu hiệu sử dụng và lỗi do tác động bên ngoài.
+----------------------------
+🔴 Cam kết hàng Chất lượng do nhà  ao _thun_vdr  tự sản xuất nên chị em yên tâm về form dáng, đường may và chất liệu nhé.
+🔴 Cam kết hình chụp thật, hàng đẹp, Shop sẽ nhận lại hàng và hoàn tiền nếu hàng xấu và không giống hình ạ.
+#aobalo #aohaiday #aocoban #aocaocap #kamong #ao #3 #lo #nu #2 #ao3lo #satnach #aosatnach #co #gian #om #ao3lonu #100% #cotton #ao3lotrang #ao3loden #ao #ba #lo #aocroptop#aothun #aothunnu #aothundep #aothunnure
+#aothunteen #aothunteensi #aothuncroptop 
+#aothundinhkimsa #aothungiare', 
+'public/img/products/c3182e84bfa137bcecbfb1bb51959fb5.png',
+35),
+(14, 51000, '[Xả Kho] Áo Ba Lỗ Nam Co Giãn, Thấm Hút Mồ Hôi hàng VNXK(Hà Nội)', 'áo nam', 
+'🎁 Áo ba lỗ nam, Áo Lót Nam loại mỏng, chất liệu cotton mỏng
+👉👉 MỀM MẠI – KHÔ THOÁNG – MẶC NHƯ KHÔNG MẶC! ----- 
+➦ Chất vải sợi tự nhiên, rất mềm mại. Thấm hút mồ hôi, thoát hơi và kháng khuẩn rất tốt.
+ ➦ Kiểu dáng thiết kế trẻ trung, mềm mại
+ ➦ Rất bền và không phai màu, không bai nhão trong thời dài sử dụng.
+i ➦ màu trắng đơn giản, sang trọng
+ ➦ Mặc thoáng mát, thoải mái không gò bó
+➦ Không bai dãn, sổ lông trong quá trình sử dụng 
+➦ Sản phẩm hot và được ưa chuộng nhất năm
+➦  Có các size M (50 - 62KG) , L(60 - 72 KG), 2L(70 - 82KG)
+ ➦ Chính sách giá ưu đãi tốt nhất thị trường
+ ➦Áo được thiết kế đơn giản, dễ mặc cho nam giới phong cách năng động và khỏe khoắn hơn.
+ 👉👉 Mua ngay Áo ba lỗ nam Hà Nội ngay hôm nay để nhận ƯU ĐÃI KHỦNG!!!', 
+'public/img/products/f4a695003d10825a8ee6337a278600fd.png',
+35),
+(15, 51000, 'Quần Jeans Đen Bạc Dáng Rộng Cạp Cao Ống Rộng 2 Túi Vuông Cá Tính Tôn Dáng', 'quần nam', 
+'QUẦN TÚI VUÔNG 301
+___
+     Chất liệu: Bò / Jeans
+BẢNG SIZE THAM KHẢO
+XS: Eo 64cm Mông 93cm Dài quần 101cm Đùi 54cm Chu vi gấu quần 42cm
+S:   Eo 68cm Mông 96cm Dài quần 102cm Đùi 56cm Chu vi gấu quần 43cm
+M:  Eo 72cm Mông 100cm Dài quần 102cm Đùi 58cm Chu vi gấu quần 43.5cm
+L:   Eo 76cm Mông 104cm Dài quần 103cm Đùi 60cm Chu vi gấu quần 44cm
+XL: Eo 80cm Mông 108cm Dài quần 104cm Đùi 62cm  Chu vi gấu quần 45cm
+2XL: Eo 84cm Mông 112cm Dài quần 105cm Đùi 65cm Chu vi gấu quần 45cm
+
+💓Kích thước trên mô tả được đô thủ công, vì vậy có thể bị sai lệch 1-2cm
+INBOX để được hỗ trợ tư vấn size
+
+CHÍNH SÁCH ĐỔI TRẢ
+- Đối với trường hợp xảy ra nhầm lẫn trong đơn hàng hoặc có lỗi phía nhà sản xuất, bạn vui lòng liên hệ cho shop kèm hình ảnh và video bóc hàng để được hỗ trợ đổi hàng miễn phí nhanh chóng.
+- Lưu ý: Sản phẩm còn nguyên tag và không có tình trạng đã qua sử dụng.
+_________
+💓Cam kết nguồn gốc sản phẩm 100% là Hàng QCCC, được nhà Chanh đặt trực tiếp không qua trung gian nên giá cả rất hợp lý
+💓Những sản phẩm đăng bán là những sản phẩm được nhà Chanh tuyển chọn qua chất lượng vải, đường may, kiểu dáng nên các bạn hoàn toàn yên tâm khi mua hàng tại nhà Chanh', 
+'public/img/products/1c686be9cea18b4c687d4199c8a3dcf6.png',
+35),
+(16, 205000, 'Quần Jeans Đen Bạc Dáng Rộng Cạp Cao Ống Rộng 2 Túi Vuông Cá Tính Tôn Dáng', 'quần nam', 
+'QUẦN TÚI VUÔNG 301
+___
+     Chất liệu: Bò / Jeans
+BẢNG SIZE THAM KHẢO
+XS: Eo 64cm Mông 93cm Dài quần 101cm Đùi 54cm Chu vi gấu quần 42cm
+S:   Eo 68cm Mông 96cm Dài quần 102cm Đùi 56cm Chu vi gấu quần 43cm
+M:  Eo 72cm Mông 100cm Dài quần 102cm Đùi 58cm Chu vi gấu quần 43.5cm
+L:   Eo 76cm Mông 104cm Dài quần 103cm Đùi 60cm Chu vi gấu quần 44cm
+XL: Eo 80cm Mông 108cm Dài quần 104cm Đùi 62cm  Chu vi gấu quần 45cm
+2XL: Eo 84cm Mông 112cm Dài quần 105cm Đùi 65cm Chu vi gấu quần 45cm
+
+💓Kích thước trên mô tả được đô thủ công, vì vậy có thể bị sai lệch 1-2cm
+INBOX để được hỗ trợ tư vấn size
+
+CHÍNH SÁCH ĐỔI TRẢ
+- Đối với trường hợp xảy ra nhầm lẫn trong đơn hàng hoặc có lỗi phía nhà sản xuất, bạn vui lòng liên hệ cho shop kèm hình ảnh và video bóc hàng để được hỗ trợ đổi hàng miễn phí nhanh chóng.
+- Lưu ý: Sản phẩm còn nguyên tag và không có tình trạng đã qua sử dụng.
+_________
+💓Cam kết nguồn gốc sản phẩm 100% là Hàng QCCC, được nhà Chanh đặt trực tiếp không qua trung gian nên giá cả rất hợp lý
+💓Những sản phẩm đăng bán là những sản phẩm được nhà Chanh tuyển chọn qua chất lượng vải, đường may, kiểu dáng nên các bạn hoàn toàn yên tâm khi mua hàng tại nhà Chanh', 
+'public/img/products/1c686be9cea18b4c687d4199c8a3dcf6.png',
+13),
+(17, 240000, 'Áo choàng bông thú lông mịn mùa đông', 'áo nữ', 
+' Tăm tia bao lâu nay cúi cùng shop cũng nhả sêu cho em gom này~~~ đông mà lười là toàn chùm em nó thuii ấm dã man mà xinh xỉu áaaa
+
+Đi lang thang trong nhà ko sợ lạnh, mà có chẳng may phải chạy ra ngoài thì vẫn ấm áp ạ.
+Nhìn gấu cưng dễ sợ lunnn á 😚😚 
+Heheee sắm 1 e để đi đầu trend nàoooo 
+
+🐶 5 mẫu em đánh số
+Size S-M-L-XL
+S: 40-47kg
+M: 47-54kg
+L: 54-60kg
+XL: 60-67kg', 
+'public/img/products/sg-11134201-22100-ofm9emsngjiv6c.png',
+0),
+(18, 220000, 'Áo len nam cổ lọ dài tay Gman vải len tăm công nghệ dệt kim cao cấp phong cách hàn quốc', 'áo nam', 
+'  1. THÔNG TIN SẢN PHẨM: Áo Len Nam cổ lọ dài tay - thời trang nam
+✔️ Áo len nam cổ lọ là món phụ kiện thời trang đơn giản nhưng không kém phần đẹp, thời trang. Các anh có thể mặc đi làm, đi chơi hay đi dự tiệc lại rất dễ phối đồ dù là với quần vải, quần jean, quần kaki hay với các sản phẩm áo măng tô, áo vest.
+
+✔️ Chất liệu: vải len cotton thiên nhiên mềm mại có bề mặt mềm mịn, thoát mồ hôi giữ ấm, nhanh tạo cảm giác vô cùng thoải mái cho người mặc và đặc biệt là không bị Xù Lông, Không phai màu, Giặt máy tốt. 
+
+✔️ Màu sắc áo len cổ lọ nam : 9 màu
+ĐEN - TRẮNG - XÁM - GHI - NÂU ĐẤT - XANH THAN - RÊU - ĐỎ ĐÔ - BE 
+
+✔️ Size áo len tay dài : L, XL
+
+    2. HƯỚNG DẪN CHỌN SIZE ÁO LEN NAM
+📍 Size L: Cân nặng 45-65kg, cao dưới 1m70
+📍 Size XL: Cân nặng 65-78kg, cao dưới 1m80.
+(Nếu bạn gặp khó khăn khi chọn size, vui lòng INBOX, cung cấp chiều cao, cân nặng để SHOP TƯ VẤN SIZE)
+
+   3.  Mẹo Nhỏ Giúp Bạn Bảo Quản Quần áo nam : 
+💌  Đối với sản phẩm quần áo mới mua về, nên giặt tay lần đầu tiên để tránh phai màu sang quần áo khác
+💌 Khi giặt nên lộn mặt trái ra để đảm bảo độ bền 
+💌 Sản phẩm phù hợp cho giặt máy (có túi giặt)/giặt tay
+💌 Không giặt chung đồ Trắng và đồ Tối màu 
+
+    4. CHÍNH SÁCH
+✔️ Cam kết chất lượng và loại mã sản phẩm giống với hình ảnh.
+✔️ Trả hàng hoàn tiền trong 3 ngày nếu như sản phẩm không đúng mô tả
+✔️ Shop sẽ đổi trả trong các trường hợp: shop giao nhầm size, nhầm màu, nhầm sản phẩm khác, thiếu hàng, áo bị lỗi và các lỗi khác của nhà sản xuất.
+✔️ Trong các trường hợp: khách không ưng, mặc không hợp, khách chọn nhầm sản phẩm,... quý khách vui lòng  INBOX để shop hướng dẫn đổi size phù hợp
+
+    5. LƯU Ý
+🍀 Quay video khi mở / bóc / khui sản phẩm để được giải quyết nếu có sự cố
+🍀 Màu sắc của sản phẩm thực tế có thể đậm, nhạt hơn ảnh mô tả do ánh sáng và màn hình thiết bị khác nhau.
+🍀 Kích thước sản phẩm dung sai cho phép ±2cm.', 
+'public/img/products/4e738af4c439269f606dc20f38bd69f8.png',
+0),
+(19, 250000, 'Áo Len Nam Nữ Faviti Cổ 3 Phân Dài Tay Chất Lông Cừu Đẹp Cao Cấp Mềm Mịn Dày Dặn Cực Ấm Kiểu Dáng Hàn Quốc AL86', 'áo nam nữ', 
+'Len lông cừu là một loại len tự nhiên được làm Bằng công nghệ kéo sợi và xử lý xơ hiện đại ,len lông cừu tạo ra những loại len vượt trội hơn hẳn các chất liệu như bông hay vải tổng hợp. Chúng mang đến phong cách, sự thoải mái và hiệu suất cùng với sự hài hòa hoàn hảo.
+
+Những sợi len hoàn toàn tự nhiên và vô cùng quý giá, có tác dụng giữ ấm tốt nhất, không những thế còn có khả năng điều chỉnh nhiệt độ cơ thể và khử mùi hôi. Điều này khiến cho các sản phẩm từ len lông cừu càng được ưa chuộng, đặc biệt là với những người thường xuyên vận động.
+
+', 
+'public/img/products/sg-11134201-22110-n4g1b7yppvjvee.png',
+0),
+(20, 200000, 'Quần Chip Nam Boxer Thun Lạnh Combo 4 Cái, Quần Xì Nam Đùi Thun Lạnh Cao Cấp Co Giãn 4 Chiều Cực Thoáng Khí Kháng Khuẩn', 'quần lót nam', 
+'Quần Chip Nam Boxer Thun Lạnh Hộp 4 Cái, Quần Xì Nam Đùi Thun Lạnh Cao Cấp Co Giãn 4 Chiều Cực Thoáng Khí Kháng Khuẩn.
+Quần Chip Nam boxer thun lạnh vẫn là chiếc quần lót mềm mại, mát lạnh giúp bảo vệ và nâng đỡ cậu nhỏ suốt ngày dài làm việc nhưng với chất liệu thun lạnh cao cấp sẽ mang lại những trải nghiệm hoàn toàn thoải mái và mát mẽ cho các chàng trai.
+- Sản phẩm sử dụng vải thun lạnh co giãn tốt cực thoáng mát (Đảm bảo Uy Tín - Cam kết vải cực đẹp)
+- Quần Chip Nam Boxer thun lạnh là mẫu sản phẩm Hot nhất hiện nay, đang được nhiều bạn nam ưa thích
+- Sản phẩm quần lót nam Boxer thun lạnh cao cấp đầy đủ nhãn mác hiệu. 
+- Xưởng nhà may, đẹp từ đường kim mũi chỉ, chất liệu an toàn. 
+- Quần Chip Nam boxer cao cấp với chất liệu thun lạnh mềm mại, bền đẹp, thoáng mát, đàn hồi, giúp co giãn cực tốt, mang lại cảm giác thoải mái đã được tạo ra từ đôi tay của những người thợ lành nghề.
+- Sản phẩm là loại vải mềm, mịn, mát và không bai nhão 
+- Quần Chip Nam có độ thấm hút mồ hôi cao, tạo sự thông thoáng 
+- Chất liệu: vải thun lạnh lạnh cao cấp
+- Màu sắc: trắng, đen, xanh đen, đỏ ( được trộn màu ngẫu nhiên)
+- Tính năng của sản phẩm: sang trọng, mềm mại, êm ái, thoát hơi cực tốt, thiết kế đai lưng tạo nên sự mạnh mẽ cho phái mạnh. 
+- Quần Chip Nam  với 100% vải thun lạnh cao cấp được sản xuất tỷ mỹ theo tiêu chuẩn Việt Nam. 
+- Quần xì nam boxer với kiểu dáng khoẻ khoắn hiện đại, năng động, ôm sát vào cơ thể cùng với gam màu tươi sáng tạo nên sự tự tin cho phái mạnh mỗi ngày. 
+- Sản phẩm  với thiết kế đai lưng rời mạnh mẽ, sử dụng công nghệ dệt may mới nhất để tạo nên chất lượng cho sản phẩm, đem đến cảm giác co dãn siêu tốt, mềm mượt không để lại vết hằn trên da. 
+- Sản phẩm dễ giặt và dễ bảo quản, không bị phai màu và ra màu khi giặt. 
+- Quần xì nam boxer thun lạnh có khả năng hống ẩm, chống mùi hôi và vi khuẩn, bảo vệ làn da nhạy cảm của cậu bé.
+Bảng Size
+- Size XL: 45kg – 55kg
+- Size XXL: 56kg – 65kg 
+- Size XXXL: 66kg – 75kg 
+Lưu ý! 
+- Quý khách có cân nặng giữa 2 size nên chọn size lớn hơn, để chắc chắn hơn về size nên inbox cho shop về chiều cao cân nặng để shop tư vấn size phù hợp . 
+Hướng Dẫn Bảo Quản
+- Không sử dụng chất tẩy để giặt Quần xì nam vì sẽ làm ảnh hưởng màu sắc của sản phẩm.
+- Sản phẩm khi phơi nên được lộn ra bề trái để bảo vệ gam màu của sản phẩm được tốt hơn.
+Cam Kết Của Shop
+- Shop cam kết sản phẩm giống hình 100% và luôn đặt chất lượng lên hàng đầu. 
+- Tất cả hình ảnh đều là ảnh thật do shop tự chụp.
+- Cam kết 100% đổi nếu sản phẩm khách đặt không vừa Size hoặc trả hàng nếu lỗi do shop. 
+- Hàng luôn có sẳn giao ngay khi khách đặt. 
+- Nếu có bất cứ điều gì không hài lòng về sản phẩm, khách vui lòng liên hệ với shop trước khi đánh giá shop nhé, shop sẽ sắp xếp đổi, trả hàng hoặc hoàn tiền cho khách ạ!
+', 
+'public/img/products/0500129cf7275778a13771d5cfc387d8.png',
+0);
 
 --
 -- Table structure for table `user`
