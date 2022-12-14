@@ -76,7 +76,7 @@
                </div>
                
             </div>
-            <div class="col-md-12 col-xl-4 rounded-2 m-2">
+            <div class="col-md-12 col-xl-4 rounded-2 m-2 d-none d-lg-block d-print-block">
                <img class="p-3" src="/assignment/BigFarm/assets/images/thoi-trang-nam.jpg" alt="hello">
             </div>
          </div>      
