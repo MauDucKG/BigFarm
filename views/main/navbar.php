@@ -26,8 +26,10 @@
   <link href="assets/stylesheets/stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/stylesheets/star_rating.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="assets/stylesheets/main/services.css">
 </head>
 
 <body>
@@ -116,32 +118,33 @@
   
   <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
-        <div class="container d-flex align-items-center">
+        <div class="container  align-items-center">
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="public/assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-white bd-subnavbar py-2">
             <h1 class="logo "><a href="index.php?page=main&controller=layouts&action=index"><img src="assets/images/team_logo.png" alt="">BIG<span>FARM</span></a></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-5" type="button"  aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-3">
+            <div class="collapse navbar-collapse hide" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="index.php?page=main&controller=layouts&action=index" class="nav-link">Introduce</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=about&action=index">About</a></li>
-                    <li class="nav-item"><a href="index.php?page=main&controller=contact&action=index">News</a></li>
+                    <li class="nav-item"><a href="index.php?page=main&controller=blog&action=index">News</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=sale&action=index">Sale</a></li>
-                    <li class="nav-item"><a href="index.php?page=main&controller=archive&action=index">Product</a></li>
+                    <li class="nav-item"><a href="index.php?page=main&controller=products&action=index">Product</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=services&action=index">Service</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=contact&action=index">Contact</a></li>
 
                     <?php
                         if (!isset($_SESSION["guest"])){
-                            echo '
-                            <li><a href="index.php?page=main&controller=register&action=index" class="box-arrow-in-right"><i class="bu bi-file-lock-fill"></i></a></li> <!-- Đăng ký -->
-                            <li><a href="index.php?page=main&controller=login&action=index" class="box-arrow-in-right"><i class="bu bi-person-lines-fill"></i></a></li> <!-- Đăng nhập -->
+                    ?>
+                        <li><a href="index.php?page=main&controller=register&action=index" data-toggle="tooltip" data-placement="bottom" title="Đăng ký"><i class="bu bi-file-lock-fill">Register</i></a></li> <!-- Đăng ký -->
+                        <li><a href="index.php?page=main&controller=login&action=index" data-toggle="tooltip" data-placement="bottom" title="Đăng nhập" class="box-arrow-in-right"><i class="bu bi-person-lines-fill">Login</i></a></li> <!-- Đăng nhập -->
                             
-                            ';
+                    <?php
                         }
                         else{
                             echo '
