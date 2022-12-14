@@ -9,7 +9,7 @@ class LoginController extends BaseController
 		$this->folder = 'login';
 	}
 
-	public function index()
+	public function check()
 	{
 		session_start();
 		if (isset($_SESSION["guest"]))
