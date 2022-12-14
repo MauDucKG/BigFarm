@@ -33,3 +33,6 @@ $(".btn-delete").click(function (e) {
 	$("#DeleteUserModal input[name='img']").val(img);
 	$('#DeleteUserModal').modal('show');
 })
+$(document).ready(function () {
+    $('#tab-user').DataTable();
+});
