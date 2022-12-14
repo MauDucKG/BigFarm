@@ -8,7 +8,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active align-center">
             <img src="https://bizweb.dktcdn.net/100/442/302/themes/842651/assets/slider_3.jpg?1668074220953" class="d-block w-60 imageChance" alt="">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
@@ -16,14 +16,14 @@
             </div> -->
             </div>
             <div class="carousel-item">
-            <img src="assets/images/introduce/1.png" class="d-block w-100" alt="">
+            <img src="https://bizweb.dktcdn.net/100/442/302/themes/842651/assets/slider_2.jpg?1668074220953" class="d-block w-100" alt="">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Second slide label</h5>
                 <p>Some representative placeholder content for the second slide.</p>
             </div> -->
             </div>
             <div class="carousel-item">
-            <img src="assets/images/introduce/1.png" class="d-block w-100" alt="">
+            <img src="https://bizweb.dktcdn.net/100/442/302/themes/842651/assets/slider_1.jpg?1668074220953" class="d-block w-100" alt="">
             <!-- <div class="carousel-caption d-none d-md-block">
                 <h5>Third slide label</h5>
                 <p>Some representative placeholder content for the third slide.</p>
