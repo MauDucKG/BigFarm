@@ -131,7 +131,7 @@
                     <li class="nav-item"><a href="index.php?page=main&controller=about&action=index">About</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=contact&action=index">News</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=sale&action=index">Sale</a></li>
-                    <li class="nav-item"><a href="index.php?page=main&controller=archive&action=index">Product</a></li>
+                    <li class="nav-item"><a href="index.php?page=main&controller=products&action=index">Product</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=services&action=index">Service</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=contact&action=index">Contact</a></li>
 
