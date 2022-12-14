@@ -4,7 +4,6 @@ include_once('views/main/navbar.php');
 ?>
 
 <body>
-    <link rel="stylesheet" href="contact.css">
     <div class="container" style="margin-top: 6%;">
         <p class="fs-2 text-center">THÔNG TIN LIÊN HỆ</p>
     </div>
@@ -14,6 +13,7 @@ include_once('views/main/navbar.php');
     </div> -->
     <div class="row mx-5 mt-2 con">
         <?php
+        // href="https://goo.gl/maps/dyhKkLf4aSUYmhQo7" target="_blank"
             foreach ($companies as $company) {
                 echo '
                 <div class="col-3">
@@ -24,13 +24,17 @@ include_once('views/main/navbar.php');
                 echo '
                 <div class="col-5">
                     <div class="fs-5 fw-bold">ĐỊA CHỈ</div>
-                    <div>'. $company->address .'</div>
+                    <div>
+                        <a class="location">'
+                        . $company->address .
+                    '   </a>
+                    </div>
                 </div>
                 ';
                 echo '
                 <div class="col-4">
                     <div class="fs-5 fw-bold">SỐ ĐIỆN THOẠI</div>
-                    <div>02.838 647 256 - 5221</div>
+                    <div class="phone"></div>
                 </div>
                 ';
             }
@@ -60,6 +64,7 @@ include_once('views/main/navbar.php');
             <div>02.838 647 256 - 5221</div>
         </div> -->
     </div>
+    <script src='assets/javascripts/company/location.js'></script>
 </body>
     
 <?php
