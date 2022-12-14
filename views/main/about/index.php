@@ -65,7 +65,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut doloribus ipsa id nostrum expedita quia. Explicabo, esse possimus. Consequatur officiis quibusdam voluptatibus sit rem explicabo eligendi perspiciatis. Blanditiis, a?
                </p>
                <div class="align-items-center" >
-                  <button class="btn btn-dark text-white m-2" style="font-size: 30px;">View fanpage 
+                  <button class="btn btn-dark text-white m-2" style="font-size: 30px;" href="https://www.facebook.com/profile.php?id=100043539343788">View fanpage 
                   </button>
                   <div class="m-3" style="font-size: 50px;">
                      <i class="bi bi-facebook"></i> 
@@ -83,7 +83,7 @@
       </div>
 
    </div>
-   <div class="text-center p-2" style="background-color: #8ed1fc;">
+   <div class="text-center p-2" style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);" >
       <h1 class="">CÁC THÀNH VIÊN</h1>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, voluptatum sapiente numquam consequuntur atque est incidunt maxime, veniam quia eum cum magnam. Ad aliquam omnis accusantium voluptatibus, alias ut qui!</p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam esse consequatur iure corrupti recusandae voluptatum quasi harum laudantium dolor ea animi, suscipit eos? Voluptatum quia quis odit neque repudiandae! Facere.</p>
@@ -98,7 +98,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2" >
                   <!-- Product image-->
-                  <img class="card-img-top" src="/assignment/BigFarm/assets/images/DHuy.jpg" style=" " alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/consulting.jpg"  alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -116,7 +116,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/assignment/BigFarm/assets/images/DHuy.jpg" style="" alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/designing.jpg"  alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -134,7 +134,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/BigFarm/assets/images/DHuy.jpg"  alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/consulting.jpg"  alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -151,7 +151,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/BigFarm/assets/images/DHuy.jpg" style="" alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/sale.jpg" style="" alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">
@@ -170,12 +170,12 @@
       </div>
    </div>
 
-   <section style="background-color: #808080;">
+   <section style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);">
    <div class="align-left container" >
 
       <div class="row p-4">
          <div class="col-12">
-               <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-light"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
+               <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-dark text-center"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
                </h1>
          </div>
          <div class="col-12 col-lg-3 col-md-6">
