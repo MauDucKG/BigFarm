@@ -4,7 +4,7 @@ include_once('views/main/navbar.php');
 ?>
 
 <body>
-    <div class="container" style="margin-top: 6%;">
+    <div class="container" style="margin-top: 7.5%;">
         <p class="fs-2 text-center">THÔNG TIN LIÊN HỆ</p>
     </div>
     <!-- ======= Contact Section ======= -->
