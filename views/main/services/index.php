@@ -57,51 +57,53 @@
                foreach ($products as $product){
             ?>
 
-            <form action="index.php?page=main&controller=services&action=edit" enctype="multipart/form-data" method="post">
+
                <div id="card" class="col mb-3" onclick="postID(<?php echo $product->id;?>)">
                   <div class="card h-100 rounded-2">
-                        <!-- Product image-->
-                        <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
-                        <!-- Product details-->
-                        <div class="card-body p-4">
-                           <div class="text-center">
-                              <!-- Product name-->
-                              <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
-                              <!-- Product price-->
-                              <?php 
-                                 echo number_format($product->price, 0, '', ',');
-                              ?><span class="money-unit"> đ</span> 
-                           </div>
-                           <!-- Rating -->
-                           <div class="text-center">
-                              <span>
-                                 <i class="bi bi-star" value="1"></i>
-                                 <i class="bi bi-star" value="2"></i>
-                                 <i class="bi bi-star" value="3"></i>
-                                 <i class="bi bi-star" value="4"></i>
-                                 <i class="bi bi-star" value="5"></i>
-                                 <!-- <span>1</span> -->
-                              </span>
-                           </div>
-                           <div class="">
-                              <input type='hidden' readonly class="form-control-plaintext" id="staticID" name="id" placeholder="<?php echo $product->id; ?>">
-                              <button id="seemore-submit"type="submit" class="btn btn-success text-white text-center align-items-center">Xem thêm</button>
-                           </div>
-                           
-
-                           
+                     <!-- Product image-->
+                     <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
+                     <!-- Product details-->
+                     <div class="card-body p-4">
+                        <div class="text-center">
+                           <!-- Product name-->
+                           <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
+                           <!-- Product price-->
+                           <?php 
+                              echo number_format($product->price, 0, '', ',');
+                           ?><span class="money-unit"> đ</span> 
                         </div>
-      
-                        <!-- Product actions-->
-                        <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <!-- Rating -->
+                        <div class="text-center">
                            <span>
-
-                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Mua</a></div>
+                              <i class="bi bi-star" value="1"></i>
+                              <i class="bi bi-star" value="2"></i>
+                              <i class="bi bi-star" value="3"></i>
+                              <i class="bi bi-star" value="4"></i>
+                              <i class="bi bi-star" value="5"></i>
+                              <!-- <span>1</span> -->
                            </span>
-                        </div> -->
+                        </div>
+                        <div class="">
+                           <input type='hidden' readonly class="form-control-plaintext" id="staticID" name="id" placeholder="<?php echo $product->id; ?>">
+                           <button id="seemore-submit"type="submit" class="btn btn-success text-white text-center align-items-center" href="index.php?page=main&controller=detail&id='. $product->id .'&action=index">Xem thêm</button>
+                        </div>
+                        
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=detail&id='. $product->id .'&action=index">Xem thêm</a></div>
+                        </div>
+                        
+                     </div>
+   
+                     <!-- Product actions-->
+                     <!-- <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <span>
+
+                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Mua</a></div>
+                        </span>
+                     </div> -->
                   </div>
                </div>
-            </form>
+
             <?php      
             }
             ?>
