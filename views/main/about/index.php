@@ -151,7 +151,7 @@
             <div id="card" class="col mb-3" style="width: 25rem;">
                <div class="card rounded-2">
                   <!-- Product image-->
-                  <img class="card-img-top" src="/BigFarm/assets/images/sale.jpg" style="" alt="..." />
+                  <img class="card-img-top" src="/BigFarm/assets/images/sale.jpg" alt="..." />
                   <!-- Product details-->
                   <div class="card-body p-4">
                      <div class="text-center">

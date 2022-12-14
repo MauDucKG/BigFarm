@@ -131,12 +131,12 @@
         $i = 0;
         
         foreach ($products as $product) {
-            if ($id != $product->id && $i <= 2){
+            if ($id != $product->id && $i <= 3){
                 $i ++;
                 if ($product->sale)
                 echo '
                 
-                        <div class="col mb-3 mt-3">
+                        <div class="col-12 col-lg-3 col-md-6 mb-3 mt-3">
                         <div class="card h-100">
                             <div class="badge bg-warning text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">SALE '. $product->sale .'%</div>
                                 <!-- Product image-->
@@ -164,7 +164,7 @@
                         </div>
                         </div>';
                     else echo '                
-                        <div class="col mb-3 mt-3">
+                        <div class="col-12 col-lg-3 col-md-6 mb-3 mt-3">
                         <div class="card h-100">
                                 <!-- Product image-->
                                 <img class="card-img-top" src="' . $product->img .'" alt="...">
