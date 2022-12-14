@@ -23,7 +23,7 @@
 
       }
   </style>
-   <div id="advertisement-product"class="container-fluid d-block"style="margin-top: 60px;">
+   <div id="advertisement-product"class="container-fluid d-block"style="margin-top: 80px;">
       <div class="row banner">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
          <div class="carousel-inner">
@@ -85,7 +85,7 @@
                         </div>
                         
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=detail&id='. $product->id .'&action=index">Xem thêm</a></div>
+                           <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?page=main&controller=detail&id=<?php  echo $product->id;?>&action=index">Xem thêm</a></div>
                         </div>
                         
                      </div>
