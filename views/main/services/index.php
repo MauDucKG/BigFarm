@@ -61,7 +61,7 @@
                <div id="card" class="col mb-3"  >
                   <div class="card h-100 rounded-2" >
                      <!-- Product image-->
-                     <img class="card-img-top" src="/assignment/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
+                     <img class="card-img-top" src="/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
                      <!-- Product details-->
                      <div class="card-body p-4">
                         <div class="text-center">
