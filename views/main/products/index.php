@@ -126,16 +126,6 @@ s
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
    <script type="text/javascript">
-      function postID(id){
-         $.post('/assignment/BigFarm/index.php?page=main&controller=services&action=get',
-         {
-            'id': id
-         },
-         function(data, status){
-            alert("Data: " +data + "\nStatus: " + status);
-         });
-         window.location.assign('/assignment/BigFarm/index.php?page=main&controller=services&action=get');
-      }
       function getPageList(totalPages, page, maxLength){
          function range(start, end){
             return Array.from(Array(end - start + 1), (_, i) => i + start);
