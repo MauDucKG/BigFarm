@@ -28,7 +28,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="assets/stylesheets/main/services.css">
 </head>
 
 <body>
@@ -131,7 +132,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="index.php?page=main&controller=layouts&action=index" class="nav-link">Introduce</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=about&action=index">About</a></li>
-                    <li class="nav-item"><a href="index.php?page=main&controller=contact&action=index">News</a></li>
+                    <li class="nav-item"><a href="index.php?page=main&controller=blog&action=index">News</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=sale&action=index">Sale</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=products&action=index">Product</a></li>
                     <li class="nav-item"><a href="index.php?page=main&controller=services&action=index">Service</a></li>

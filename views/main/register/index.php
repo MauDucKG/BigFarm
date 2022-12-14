@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Register</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets\stylesheets\register.css">
+	<link rel="stylesheet" href="assets/stylesheets/register.css">
 </head>
 
 <body class="text-center">
 	<div class="form-signin w-100 m-auto">
 		<form action="index.php?page=main&controller=register&action=submit" method="POST" class="text-right">
-			<img class="mb-3 border rounded-circle p-1" src="assets\images\team_logo.png" alt="" width="72" height="72">
+			<img class="mb-3 border rounded-circle p-1" src="assets/images/team_logo.png" alt="" width="72" height="72">
 			<h1 class="h3 mb-3 fw-normal">Register as User</h1>
 			<div class="p-3 rounded-4 border shadow mb-2">
 				<div class="m-1 row">
