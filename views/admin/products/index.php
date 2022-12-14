@@ -72,11 +72,11 @@ require_once('views/admin/content_layouts.php'); ?>
                         <table id="tab-product" class="table table-bordered table-striped mt-3 shadow">
                             <thead>
                                 <tr class="text-center">
-                                    <th scope="col">STT</th>
-                                    <th scope="col">Tên sản phẩm</th>
-                                    <th scope="col">Giá </th>
-                                    <th scope="col">Mô tả</th>
-                                    <th scope="col">Nội dung</th>
+                                    <th scope="col" class="d-none d-lg-block d-print-block">STT</th>
+                                    <th scope="col" >Tên sản phẩm</th>
+                                    <th scope="col" class="d-none d-lg-block d-print-block">Giá </th>
+                                    <th scope="col" class="d-none d-lg-block d-print-block">Mô tả</th>
+                                    <th scope="col" class="d-none d-lg-block d-print-block">Nội dung</th>
                                     <th scope="col">Hình ảnh</th>
                                     <th scope="col">Thao tác</th>
                                 </tr>
@@ -91,20 +91,20 @@ require_once('views/admin/content_layouts.php'); ?>
 
                                     echo
                                     "<tr class=\"text-center\">
-                                                    <td>"
+                                                    <td class=\"d-none d-lg-block d-print-block\">"
                                         . $index .
                                         "</td>
                                                     <td>
                                                        " . $product->name . "
                                                     </td>
-                                                    <td>
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                       " .  $product->price . "
                                                     </td>
-                                                    <td>
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                      " .  $product->description . "
                                                     </td>
-                                                    <td>
-                                                       " . $product->content . "
+                                                    <td \"d-none d-lg-block d-print-block\">
+                                                       " . str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),'<br><br>',$product->content). "
                                                     </td>
                                                     <td >
                                                         <img style=\"width: 60px; height:35px;\" src='$product->img'>
@@ -114,7 +114,6 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <button class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-bs-id='$product->id' data-bs-target='#DeleteProductModal' data-bs-toggle='modal'>Xóa</button>
                                                   </td>
                                                 </tr>";
-                                    $index++;
                                 }
                                 ?>
                             </tbody>
