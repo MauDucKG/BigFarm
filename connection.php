@@ -12,7 +12,7 @@ class DB
                 die("Failed to connect to MySQL: " . mysqli_connect_error());
             }
         }
-
+        
         return self::$instance;
     }
 }
