@@ -8,8 +8,9 @@ class Product
     public $description;
     public $content;
     public $img;
+    public $sale;
 
-    public function __construct($id, $name, $price, $description, $content, $img)
+    public function __construct($id, $name, $price, $description, $content, $img, $sale)
     {
         $this->id = $id;
         $this->name = $name;
@@ -17,6 +18,7 @@ class Product
         $this->description = $description;
         $this->content = $content;
         $this->img = $img;
+        $this->sale= $sale;
     }
 
     static function getAll()
@@ -32,7 +34,8 @@ class Product
                 $product['price'],
                 $product['description'],
                 $product['content'],
-                $product['img']
+                $product['img'],
+                $product['sale']
             );
         }
         return $products;
@@ -49,17 +52,18 @@ class Product
             $result['price'],
             $result['description'],
             $result['content'],
-            $result['img']
+            $result['img'],
+            $result['sale']
         );
         return $product;
     }
 
-    static function insert($name, $price, $description, $content, $img)
+    static function insert($name, $price, $description, $content, $img, $sale)
     {
         $db = DB::getInstance();
         $req = $db->query(
-            "INSERT INTO product (name, price, description, content, img)
-            VALUES ('$name', $price, '$description', '$content', '$img');");
+            "INSERT INTO product (name, price, description, content, img, sale)
+            VALUES ('$name', $price, '$description', '$content', '$img', '$sale');");
         return $req;
     }
 
@@ -70,13 +74,13 @@ class Product
         return $req;
     }
 
-    static function update($id, $name, $price, $description, $content, $img)
+    static function update($id, $name, $price, $description, $content, $img, $sale)
     {
         $db = DB::getInstance();
         $req = $db->query(
             "
                 UPDATE product
-                SET name = '$name', price = $price, description = '$description', content = '$content', img = '$img'
+                SET name = '$name', price = $price, description = '$description', content = '$content', img = '$img' , sale = '$sale'
                 WHERE id = $id
             ;");
     }
