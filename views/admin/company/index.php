@@ -76,10 +76,10 @@ require_once('views/admin/content_layouts.php'); ?>
 							<table class="table table-bordered table-striped shadow" id="tab-company">
 								<thead>
 									<tr class="text-center">
-										<th class="d-none d-lg-block d-print-block">STT</th>
+										<th class="d-none d-lg-table-cell">STT</th>
 										<th>Tên chi nhánh</th>
-										<th class="d-none d-lg-block d-print-block">Địa chỉ chi nhánh</th>
-										<th class="d-none d-lg-block d-print-block">Cập nhật lần cuối</th>
+										<th class="d-none d-lg-table-cell">Địa chỉ chi nhánh</th>
+										<th class="d-none d-lg-table-cell">Cập nhật lần cuối</th>
 										<th>Thao tác</th>
 									</tr>
 								</thead>
@@ -87,10 +87,10 @@ require_once('views/admin/content_layouts.php'); ?>
 									<?php
 									foreach ($company as $company) {
 										echo "<tr class='text-center'>";
-										echo "<td class=\"d-none d-lg-block d-print-block\">" . $company->id . "</td>";
+										echo "<td class=\"d-none d-lg-table-cell\">" . $company->id . "</td>";
 										echo "<td>" . $company->name . "</td>";
-										echo "<td class=\"d-none d-lg-block d-print-block\">" . $company->address . "</td>";
-										echo "<td class=\"d-none d-lg-block d-print-block\">" . $company->updateAt . "</td>";
+										echo "<td class=\"d-none d-lg-table-cell\">" . $company->address . "</td>";
+										echo "<td class=\"d-none d-lg-table-cell\">" . $company->updateAt . "</td>";
 										echo "<td>
 											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-bs-id=$company->id data-bs-name='$company->name' data-bs-address='$company->address' data-bs-target='#EditCompanyModal' data-bs-toggle='modal'>Edit</btn>
 											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-bs-id=$company->id data-bs-target='#DeleteCompanyModal' data-bs-toggle='modal'> Xóa</btn>

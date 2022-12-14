@@ -132,9 +132,9 @@ require_once('views/admin/content_layouts.php'); ?>
                             <table class="table table-bordered table-striped mt-3 shadow" id="tab-user">
                                 <thead>
                                     <tr class="text-center">
-                                        <th class="d-none d-lg-block d-print-block">STT</th>
+                                        <th class="d-none d-lg-table-cell">STT</th>
                                         <th>Hình ảnh</th>
-                                        <th class="d-none d-lg-block d-print-block">Họ và tên lót</th>
+                                        <th class="d-none d-lg-table-cell">Họ và tên lót</th>
                                         <th>Tên</th>
                                         <th>Thao tác</th>
                                     </tr>
@@ -144,9 +144,9 @@ require_once('views/admin/content_layouts.php'); ?>
                                     $index = 1;
                                     foreach ($user as $user) {
                                         echo "<tr class='text-center'>";
-                                        echo "<td class='align-middle d-none d-lg-block d-print-block'>" . $index++ . "</td>";
+                                        echo "<td class='align-middle d-none d-lg-table-cell'>" . $index++ . "</td>";
                                         echo "<td><img src='$user->profile_photo' class='border rounded-circle p-1' width='72' height='72'></td>";
-                                        echo "<td class='align-middle d-none d-lg-block d-print-block'>" . $user->fname . "</td>";
+                                        echo "<td class='align-middle d-none d-lg-table-cell'>" . $user->fname . "</td>";
                                         echo "<td class='align-middle'>" . $user->lname . "</td>";
                                         echo "<td class='align-middle'>
 											<button class='btn-edit btn btn-primary btn-xs' data-bs-email='$user->email' data-bs-fname='$user->fname' data-bs-lname='$user->lname' data-bs-gender='$user->gender' data-bs-age='$user->age' data-bs-phone='$user->phone' data-bs-img='$user->profile_photo' data-bs-target='#EditUserModal' data-bs-toggle='modal'>Edit</button>

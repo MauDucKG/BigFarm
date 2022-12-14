@@ -63,11 +63,11 @@ require_once('views/admin/content_layouts.php'); ?>
                             <table id="tab-new" class="table table-bordered table-striped shadow">
                                 <thead>
                                     <tr class="text-center">
-                                        <th scope="col" class="d-none d-lg-block d-print-block">STT</th>
-                                        <th scope="col" class="d-none d-lg-block d-print-block">Trạng thái</th>
-                                        <th scope="col" class="d-none d-lg-block d-print-block">Ngày </th>
-                                        <th scope="col" class="d-none d-lg-block d-print-block">Mô tả</th>
-                                        <th scope="col" class="d-none d-lg-block d-print-block">Nội dung</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">STT</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">Trạng thái</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">Ngày </th>
+                                        <th scope="col" class="d-none d-lg-table-cell">Mô tả</th>
+                                        <th scope="col" class="d-none d-lg-table-cell">Nội dung</th>
                                         <th scope="col">Tiêu đề</th>
                                         <th scope="col">Thao tác</th>
                                     </tr>
@@ -82,19 +82,19 @@ require_once('views/admin/content_layouts.php'); ?>
                                         $button = ($new->status) ? "<button class=\"btn-hide btn btn-danger btn-xs\" data-bs-target='#HideNewModal' data-bs-toggle='modal' data-bs-id='$new->id' >Post</button>" : "<button class=\"btn-hide btn btn-primary btn-xs\" data-bs-target='#HideNewModal' data-bs-toggle='modal' data-bs-id='$new->id' >Hide</button>";
                                         echo
                                         "<tr >
-                                                    <td class=\"d-none d-lg-block d-print-block\">"
+                                                    <td class=\"d-none d-lg-table-cell\">"
                                             . $index .
                                             "</td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                        " .  $status . "
                                                     </td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                       " .  $new->date . "
                                                     </td>   
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                      " .  $new->description . "
                                                     </td> 
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                        " . $new->content . "
                                                     </td>   
                                                     <td>

@@ -76,9 +76,9 @@ require_once('views/admin/content_layouts.php'); ?>
 							<table class="table table-bordered table-striped mt-3 shadow" id="tab-admin">
 								<thead>
 									<tr class="text-center">
-										<th class="d-none d-lg-block d-print-block">STT</th>
+										<th class="d-none d-lg-table-cell">STT</th>
 										<th>Tên đăng nhập</th>
-										<th  class="d-none d-lg-block d-print-block">Cập nhật lần cuối</th>
+										<th class="d-none d-lg-table-cell">Cập nhật lần cuối</th>
 										<th>Thao tác</th>
 									</tr>
 								</thead>
@@ -87,9 +87,9 @@ require_once('views/admin/content_layouts.php'); ?>
 									$index = 1;
 									foreach ($admin as $admin) {
 										echo "<tr class='text-center'>";
-										echo "<td class=\"d-none d-lg-block d-print-block\">" . $index++ . "</td>";
+										echo "<td class=\"d-none d-lg-table-cell\">" . $index++ . "</td>";
 										echo "<td>" . $admin->username . "</td>";
-										echo "<td class=\"d-none d-lg-block d-print-block\">" . $admin->updateAt . "</td>";
+										echo "<td class=\"d-none d-lg-table-cell\">" . $admin->updateAt . "</td>";
 										echo "<td>
 											<button type='button' class='btn-edit btn btn-primary btn-xs' data-bs-username='$admin->username' data-bs-password='$admin->password' data-bs-target='#EditAdminModal' data-bs-toggle='modal'>Edit</button>
 											<button type='button' class='btn-delete btn btn-danger btn-xs' data-bs-username='$admin->username' data-bs-target='#DeleteAdminModal' data-bs-toggle='modal'>Delete</button>

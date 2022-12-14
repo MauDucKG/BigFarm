@@ -72,11 +72,11 @@ require_once('views/admin/content_layouts.php'); ?>
                         <table id="tab-product" class="table table-bordered table-striped mt-3 shadow">
                             <thead>
                                 <tr class="text-center">
-                                    <th scope="col" class="d-none d-lg-block d-print-block">STT</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">STT</th>
                                     <th scope="col" >Tên sản phẩm</th>
-                                    <th scope="col" class="d-none d-lg-block d-print-block">Giá </th>
-                                    <th scope="col" class="d-none d-lg-block d-print-block">Mô tả</th>
-                                    <th scope="col" class="d-none d-lg-block d-print-block">Nội dung</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Giá </th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Mô tả</th>
+                                    <th scope="col" class="d-none d-lg-table-cell">Nội dung</th>
                                     <th scope="col">Hình ảnh</th>
                                     <th scope="col">Thao tác</th>
                                 </tr>
@@ -91,19 +91,19 @@ require_once('views/admin/content_layouts.php'); ?>
 
                                     echo
                                     "<tr class=\"text-center\">
-                                                    <td class=\"d-none d-lg-block d-print-block\">"
+                                                    <td class=\"d-none d-lg-table-cell\">"
                                         . $index .
                                         "</td>
                                                     <td>
                                                        " . $product->name . "
                                                     </td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                       " .  $product->price . "
                                                     </td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                      " .  $product->description . "
                                                     </td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                        " . $product->content . "
                                                     </td>
                                                     <td >

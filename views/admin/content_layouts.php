@@ -112,7 +112,7 @@
 						</li>
 					</ul>
 					<hr>
-					<div class="nav flex-column mb-2 dropup justify-content-between align-items-center">
+					<div class="nav flex-column mb-2 dropdown justify-content-between align-items-center">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
 							<?php
 							echo $_SESSION["user"]

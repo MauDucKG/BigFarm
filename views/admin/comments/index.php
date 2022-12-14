@@ -81,12 +81,12 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <table id="tab-comment" class="table table-bordered table-striped shadow">
                                         <thead>
                                             <tr class="text-center">
-                                                <th class="d-none d-lg-block d-print-block">STT</th>
-                                                <th class="d-none d-lg-block d-print-block">Mã bài viết</th>
-                                                <th class="d-none d-lg-block d-print-block">Ngày</th>
-                                                <th class="d-none d-lg-block d-print-block">Tiếp cận</th>
+                                                <th class="d-none d-lg-table-cell">STT</th>
+                                                <th class="d-none d-lg-table-cell">Mã bài viết</th>
+                                                <th class="d-none d-lg-table-cell">Ngày</th>
+                                                <th class="d-none d-lg-table-cell">Tiếp cận</th>
                                                 <th>Nội dung</th>
-                                                <th class="d-none d-lg-block d-print-block">Người dùng bình luận</th>
+                                                <th class="d-none d-lg-table-cell">Người dùng bình luận</th>
                                                 <th>Thao tác</th>
                                             </tr>
                                         </thead>
@@ -100,22 +100,22 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 $button = ($comment->approved) ? "<button class=\"btn-hide btn btn-danger btn-xs\" data-bs-target='#HideCommentModal' data-bs-toggle='modal' data-bs-id='$comment->id' >Post</button>" : "<button class=\"btn-hide btn btn-primary btn-xs\" data-bs-target='#HideCommentModal' data-bs-toggle='modal' data-bs-id='$comment->id' >Hide</button>";
                                                 echo
                                                 "<tr class=\"text-center\">
-                                                    <td class=\"d-none d-lg-block d-print-block\">"
+                                                    <td class=\"d-none d-lg-table-cell\">"
                                                     . $index .
                                                     "</td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">"
+                                                    <td class=\"d-none d-lg-table-cell\">"
                                                     . $comment->news_id .
                                                     "</td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                        " .  $comment->date  . "
                                                     </td>
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                       " .  $status . "
                                                     </td>   
                                                     <td>
                                                        " . $comment->content . "
                                                     </td>    
-                                                    <td class=\"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-table-cell\">
                                                     " . $comment->user_id . "
                                                  </td>             
                                                     <td> " .
