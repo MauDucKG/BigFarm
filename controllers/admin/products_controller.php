@@ -23,7 +23,7 @@ class ProductsController extends BaseController
         $price= $_POST['price'];
         $description = $_POST['description'];
         $content = $_POST['content'];
-        $target_dir = "public/img/products/";
+        $target_dir = "assets/images/product/";
         $path = $_FILES['fileToUpload']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $fileuploadname .= ".";
@@ -63,7 +63,7 @@ class ProductsController extends BaseController
             die;
         }
         else{
-            $target_dir = "public/img/products/";
+            $target_dir = "assets/images/product/";
             $path = $_FILES['fileToUpload']['name'];
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             $fileuploadname .= ".";
