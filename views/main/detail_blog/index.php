@@ -20,15 +20,15 @@ $id = $_GET['id'];
                     if ($id == $news->id){
                         echo ' 
                         <div class = "row mt-3">
-                            <h5 class="text-center fw-bold">' . $news->title . '</h5>
+                            <h5 class="text-start fw-bold">' . $news->title . '</h5>
                         </div>
-                        <div class = "row">
+                        <div class = "row container">
                             <span class="card-subtitle text-muted"><i class="bi bi-clock"></i> <time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time></span>
                         </div>
-                        <div class = "row mt-3">
+                        <div class = "row mt-3 justify-content">
                             <p> '. $news->content .'</p>
                         </div>
-                        <div class = "row">
+                        <div class = "row container">
                             <span class="card-subtitle text-muted"><i class="bi bi-chat-dots"> </i>' . count($news->comments) . ' Bình luận</span>
 
                         </div>
@@ -43,7 +43,7 @@ $id = $_GET['id'];
                                   <p class="m-0">
                                   ' . $comment->content . '
                                   </p>
-                                  <div class = "card-subtitle text-muted small mt-1"><time>' . date("F j, Y, g:i a", strtotime($comment->date)) . '</time></div>
+                                  <div class = "card-subtitle text-muted small mt-1 container"><time>' . date("F j, Y, g:i a", strtotime($comment->date)) . '</time></div>
                                   
                                 </div>
                             </div>';
@@ -70,7 +70,7 @@ $id = $_GET['id'];
                                     </div>
                                 </div>
                                 <form>
-                                <button class="btn btn-dark mt-1" data-news=' . $news->id . ' data-parent=' . $comment->id .' data-user="' . @$_SESSION["guest"] . '">Gửi bình luận</button>
+                                <button class="btn btn-dark mt-2" data-news=' . $news->id . ' data-parent=' . $comment->id .' data-user="' . @$_SESSION["guest"] . '">Gửi bình luận</button>
                                 </form>
                             </div>';
                             }
@@ -100,14 +100,14 @@ $id = $_GET['id'];
 
             <div>
 
-            <p class="fs-5 fw-bold">Bài viết gần đây</p>
+            <p class="fs-5 fw-bold text-center">Bài viết gần đây</p>
               <div>
               <?php
                 foreach ($recent as $news)
                 {
                   echo '
                   <div class="mb-1">
-                    <div><a class="text-dark" href="index.php?page=main&controller=detail_blog&id='. $news->id .'&action=index">' . $news->title . '</a>
+                    <div><a class="text-dark fw-bold" href="index.php?page=main&controller=detail_blog&id='. $news->id .'&action=index">' . $news->title . '</a>
                     </div>
                     <small class="text-muted">
                         <time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time>
