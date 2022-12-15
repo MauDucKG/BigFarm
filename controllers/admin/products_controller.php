@@ -20,6 +20,7 @@ class ProductsController extends BaseController
         $id = (string)date("Y_m_d_h_i_sa");
         $fileuploadname = (string)$id;
         $name = $_POST['name'];
+        $sale = $_POST['sale'];
         $price= $_POST['price'];
         $description = $_POST['description'];
         $content = $_POST['content'];
@@ -43,7 +44,7 @@ class ProductsController extends BaseController
             echo "Sorry, your file is too large.";
         }
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-        Product::insert($name, $price, $description, $content, $target_file);
+        Product::insert($name, $price, $description, $content, $target_file, $sale);
         header('Location: index.php?page=admin&controller=products&action=index');
     }
     public function edit(){
@@ -51,13 +52,14 @@ class ProductsController extends BaseController
         $code = (string)date("Y_m_d_h_i_sa");
         $fileuploadname = (string)$code;
         $name = $_POST['name'];
+        $sale = $_POST['sale'];
         $price= $_POST['price'];
         $description = $_POST['description'];
         $content = $_POST['content'];
         $urlcurrent = Product::get((int)$id)->img;
         if (!isset($_FILES["fileToUpload"]) || $_FILES['fileToUpload']['tmp_name'][0] == "")
         {
-            Product::update($id, $name, $price, $description, $content, $urlcurrent);
+            Product::update($id, $name, $price, $description, $content, $urlcurrent, $sale);
             echo "Dữ liệu upload bị lỗi";
             header('Location: index.php?page=admin&controller=products&action=index');
             die;
@@ -85,7 +87,7 @@ class ProductsController extends BaseController
             $file_pointer = $urlcurrent;
             unlink($file_pointer);
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-            Product::update($id, $name, $price, $description, $content, $target_file);
+            Product::update($id, $name, $price, $description, $content, $target_file, $sale);
             header('Location: index.php?page=admin&controller=products&action=index');
         }
     }

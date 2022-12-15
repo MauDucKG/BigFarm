@@ -47,14 +47,14 @@ include_once('views/main/navbar.php');
                 ';
               }
             ?>
-
+<!-- 
             <div class="blog-pagination w-25 mx-auto">
               <ul class="d-flex justify-content-evenly">
                 <li><a href="index.php?page=main&controller=blog&action=index&pg=1">1</a></li>
                 <li><a href="index.php?page=main&controller=blog&action=index&pg=2">2</a></li>
                 <li><a href="index.php?page=main&controller=blog&action=index&pg=3">3</a></li>
               </ul>
-            </div>
+            </div> -->
 
 
           </div>

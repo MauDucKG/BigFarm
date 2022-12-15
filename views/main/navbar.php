@@ -35,86 +35,86 @@
 
 <body>
   <?php
-  // if (isset($_SESSION['guest']))
-  // {
-  // echo '
-  //   <div class="modal fade" id="EditUserModal" tabindex="-1" role="dialog" aria-labelledby="EditUserModal" aria-hidden="true">
-  //   <div class="modal-dialog" role="document">
-  //     <div class="modal-content">
-  //       <div class="modal-header">
-  //         <h5 class="modal-title">Chỉnh sửa</h5>
-  //         <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  //       </div>
-  //       <form action="index.php?page=main&controller=register&action=editInfo" enctype="multipart/form-data" method="post">
-  //         <div class="modal-body">
-  //           <input type="hidden" name="email">
-  //           <div class="row">
-  //             <div class="col-md-6">
-  //               <div class="form-group">
-  //                 <div class="row"> </div>
-  //                 <label>Họ và tên lót</label>
-  //                 <input class="form-control" type="text" placeholder="Họ và tên lót" name="fname" value="' . $data->fname . '"/>
-  //               </div>
-  //             </div>
-  //             <div class="col-md-6">
-  //               <div class="form-group">
-  //                 <div class="row"> </div>
-  //                 <label>Tên</label>
-  //                 <input class="form-control" type="text" placeholder="Tên" name="lname" value="' . $data->lname . '"/>
-  //               </div>
-  //             </div>
-  //           </div>
+  if (isset($_SESSION['guest']))
+  {
+  echo '
+    <div class="modal fade" id="EditUserModal" tabindex="-1" role="dialog" aria-labelledby="EditUserModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Chỉnh sửa</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="index.php?page=main&controller=register&action=editInfo" enctype="multipart/form-data" method="post">
+          <div class="modal-body">
+            <input type="hidden" name="email">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="row"> </div>
+                  <label>Họ và tên lót</label>
+                  <input class="form-control my-2" type="text" placeholder="Họ và tên lót" name="fname" value="' . $data->fname . '"/>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="row"> </div>
+                  <label>Tên</label>
+                  <input class="form-control my-2" type="text" placeholder="Tên" name="lname" value="' . $data->lname . '"/>
+                </div>
+              </div>
+            </div>
 
-  //           <div class="row">
-  //             <div class="col-md-6">
-  //               <div class="form-group">
-  //                 <label>Tuổi</label>
-  //                 <input class="form-control" type="number" placeholder="Tuổi" name="age" value="' . $data->age . '"/>
-  //               </div>
-  //             </div>
-  //             <div class="col-md-6">
-  //               <div class="form-group">
-  //                 <label>Giới tính:</label>
-  //                 <div class="row">
-  //                   <div class="col-md-4">
-  //                     <div class="form-check">
-  //                       <input class="form-check-input" type="radio" name="gender"' . (($data->gender == '1')?'checked':"") . ' value="1" />
-  //                       <label>Nam</label>
-  //                     </div>
-  //                   </div>
-  //                   <div class="col-md-4">
-  //                     <div class="form-check">
-  //                       <input class="form-check-input" type="radio" name="gender"' . (($data->gender == '0')?'checked':"") . ' value="0" />
-  //                       <label>Nữ</label>
-  //                     </div>
-  //                   </div>
-  //                 </div>
-  //               </div>
-  //             </div>
-  //           </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Tuổi</label>
+                  <input class="form-control my-2" type="number" placeholder="Tuổi" name="age" value="' . $data->age . '"/>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Giới tính:</label>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender"' . (($data->gender == '1')?'checked':"") . ' value="1" />
+                        <label>Nam</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender"' . (($data->gender == '0')?'checked':"") . ' value="0" />
+                        <label>Nữ</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  //           <div class="form-group">
-  //             <label>Số điện thoại</label>
-  //             <input class="form-control" type="number" placeholder="Số điện thoại" name="phone" value="' . $data->phone . '"/>
-  //           </div>
-  //           <div class="form-group">
-  //             <label>Hình ảnh hiện tại </label>
-  //             <input class="form-control" type="text" name="img" readonly value="' . $data->profile_photo . '" />
-  //           </div>
-  //           <div class="form-group">
-  //             <label>Hình ảnh mới</label>&nbsp
-  //             <input type="file" name="fileToUpload" id="fileToUpload" />
-  //           </div>
-  //         </div>
-  //         <div class="modal-footer">
-  //           <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-  //           <button class="btn btn-primary" type="submit">Cập nhật</button>
-  //         </div>
-  //       </form>
-  //     </div>
-  //   </div>
-  // </div>';
-  // }
+            <div class="form-group">
+              <label>Số điện thoại</label>
+              <input class="form-control my-2" type="number" placeholder="Số điện thoại" name="phone" value="' . $data->phone . '"/>
+            </div>
+            <div class="form-group">
+              <label>Hình ảnh hiện tại </label>
+              <input class="form-control my-2" type="text" name="img" readonly value="' . $data->profile_photo . '" />
+            </div>
+            <div class="form-group">
+              <label>Hình ảnh mới</label>&nbsp
+              <input type="file" class="form-control my-2" name="fileToUpload" id="fileToUpload" />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng lại</button>
+            <button class="btn btn-primary" type="submit">Cập nhật</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>';
+  }
   ?>
   
   <!-- ======= Header ======= -->
@@ -142,20 +142,20 @@
                     <?php
                         if (!isset($_SESSION["guest"])){
                     ?>
-                        <li><a href="index.php?page=main&controller=register&action=index" data-toggle="tooltip" data-placement="bottom" title="Đăng ký"><i class="bu bi-file-lock-fill">Register</i></a></li> <!-- Đăng ký -->
-                        <li><a href="index.php?page=main&controller=login&action=index" data-toggle="tooltip" data-placement="bottom" title="Đăng nhập" class="box-arrow-in-right"><i class="bu bi-person-lines-fill">Login</i></a></li> <!-- Đăng nhập -->
+                        <li><a href="index.php?page=main&controller=register&action=index" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Đăng ký"><i class="bu bi-file-lock-fill">Register</i></a></li> <!-- Đăng ký -->
+                        <li><a href="index.php?page=main&controller=login&action=index" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Đăng nhập" class="box-arrow-in-right"><i class="bu bi-person-lines-fill">Login</i></a></li> <!-- Đăng nhập -->
                             
                     <?php
                         }
                         else{
                             echo '
-                            <li><a href="" data-toggle="modal" data-target="#EditUserModal"><i class="bu bi-person-badge-fill"></i></a></li>
+                            <li><a href="" data-bs-toggle="modal" data-bs-target="#EditUserModal"><i class="bu bi-person-badge-fill"></i></a></li>
                             <li><a href="index.php?page=main&controller=login&action=logout" class="box-arrow-in-right"><i class="bu bi-box-arrow-right"></i></a></li> <!-- Đăng xuất -->
                             ';
                         }
                     ?>
                 </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
+                    <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
                 </ul>
             </div>
             

@@ -65,7 +65,7 @@
         <!-- Grid column -->
       </div>
       <!-- Grid row -->
-      <div>
+      <div class="text-center">
         <h4>© 2022 - CÔNG TY TNHH BIGFARM VN </h4>
 
       Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.HCM
