@@ -103,7 +103,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <td class=\"d-none d-lg-block d-print-block\">
                                                      " .  $product->description . "
                                                     </td>
-                                                    <td \"d-none d-lg-block d-print-block\">
+                                                    <td class=\"d-none d-lg-block d-print-block\">
                                                        " . str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),'<br><br>',$product->content). "
                                                     </td>
                                                     <td >
