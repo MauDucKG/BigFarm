@@ -128,11 +128,23 @@
     <div class="row">
         <h2 class="text-center fw-bold">SẢN PHẨM KHÁC</h2>
      <?php 
-        $i = 0;
-        
+        $max = 0;
+        foreach($products as $product){
+            $max += 1;
+        }
+        $arr = array();
+        for($s = 0; $s < 4; $s++){
+            $temp = rand(1, $max);
+            while(in_array($temp, $arr)){
+                $temp = rand(1, $max);;
+            }
+            array_push($arr,$temp);
+        }
+        $count= 0;
         foreach ($products as $product) {
-            if ($id != $product->id && $i <= 3){
-                $i ++;
+            $count += 1;
+            foreach($arr as $i){
+            if ($id != $product->id && $i == $count){
                 if ($product->sale)
                 echo '
                 
@@ -190,6 +202,7 @@
                         </div>';
             }
         }
+    }
     ?>
    </div>
    
