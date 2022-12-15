@@ -36,8 +36,15 @@
       box-shadow: 10px 10px 5px lightblue;
       background-color: gainsboro;
    }
+   @media screen and (max-width: 1199px) {
+      #about-image{
+         display: none;
+      }      
+   }
    @media only screen and (max-width : 992px) {
-
+      #about-image{
+         display: none;
+      }
    }
    @media only screen and (max-width : 575px) {
 
@@ -49,6 +56,7 @@
       #advertisement-product{
          margin-top: 120px;
       }
+
 
    }
 </style>
@@ -81,7 +89,7 @@
                   
                </div>
                <div class="col-md-12 col-xl-4 rounded-2 m-2 d-none d-lg-block d-print-block">
-                  <img class="p-3" src="/assignment/BigFarm/assets/images/thoi-trang-nam.jpg" alt="hello">
+                  <img id="about-image"  class="p-3" src="/BigFarm/assets/images/thoi-trang-nam.jpg" alt="hello">
                </div>
             </div>      
          </div>
