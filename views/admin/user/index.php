@@ -132,9 +132,9 @@ require_once('views/admin/content_layouts.php'); ?>
                             <table class="table table-bordered table-striped mt-3 shadow" id="tab-user">
                                 <thead>
                                     <tr class="text-center">
-                                        <th class="d-none d-lg-block d-print-block">STT</th>
+                                        <th class="d-none d-lg-table-cell">STT</th>
                                         <th>Hình ảnh</th>
-                                        <th class="d-none d-lg-block d-print-block">Họ và tên lót</th>
+                                        <th class="d-none d-lg-table-cell">Họ và tên lót</th>
                                         <th>Tên</th>
                                         <th>Thao tác</th>
                                     </tr>
@@ -144,14 +144,22 @@ require_once('views/admin/content_layouts.php'); ?>
                                     $index = 1;
                                     foreach ($user as $user) {
                                         echo "<tr class='text-center'>";
-                                        echo "<td class='align-middle d-none d-lg-block d-print-block'>" . $index++ . "</td>";
+                                        echo "<td class='align-middle d-none d-lg-table-cell'>" . $index++ . "</td>";
                                         echo "<td><img src='$user->profile_photo' class='border rounded-circle p-1' width='72' height='72'></td>";
-                                        echo "<td class='align-middle d-none d-lg-block d-print-block'>" . $user->fname . "</td>";
+                                        echo "<td class='align-middle d-none d-lg-table-cell'>" . $user->fname . "</td>";
                                         echo "<td class='align-middle'>" . $user->lname . "</td>";
                                         echo "<td class='align-middle'>
-											<button class='btn-edit btn btn-primary btn-xs' data-bs-email='$user->email' data-bs-fname='$user->fname' data-bs-lname='$user->lname' data-bs-gender='$user->gender' data-bs-age='$user->age' data-bs-phone='$user->phone' data-bs-img='$user->profile_photo' data-bs-target='#EditUserModal' data-bs-toggle='modal'>Edit</button>
-											<button class='btn-changepass btn btn-warning btn-xs' data-bs-email='$user->email' data-bs-target='#EditPassModal' data-bs-toggle='modal'>Change Password</button>
-											<button class='btn-delete btn btn-danger btn-xs' data-bs-email='$user->email' data-bs-img='$user->profile_photo' data-bs-target='#DeleteUserModal' data-bs-toggle='modal'>Delete</button>
+											<button class='btn-edit btn btn-primary btn-xs' data-bs-email='$user->email' data-bs-fname='$user->fname' data-bs-lname='$user->lname' data-bs-gender='$user->gender' data-bs-age='$user->age' data-bs-phone='$user->phone' data-bs-img='$user->profile_photo' data-bs-target='#EditUserModal' data-bs-toggle='modal'><svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='currentColor' class='bi bi-pencil-square' viewBox='0 0 16 16'>
+                                            <path d='M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z'/>
+                                            <path fill-rule='evenodd' d='M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z'/>
+                                          </svg></button>
+											<button class='btn-changepass btn btn-warning btn-xs' data-bs-email='$user->email' data-bs-target='#EditPassModal' data-bs-toggle='modal'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pass' viewBox='0 0 16 16'>
+                                            <path d='M5.5 5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3Z'/>
+                                            <path d='M8 2a2 2 0 0 0 2-2h2.5A1.5 1.5 0 0 1 14 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-13A1.5 1.5 0 0 1 3.5 0H6a2 2 0 0 0 2 2Zm0 1a3.001 3.001 0 0 1-2.83-2H3.5a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5h-1.67A3.001 3.001 0 0 1 8 3Z'/>
+                                          </svg></button>
+											<button class='btn-delete btn btn-danger btn-xs' data-bs-email='$user->email' data-bs-img='$user->profile_photo' data-bs-target='#DeleteUserModal' data-bs-toggle='modal'><svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='currentColor' class='bi bi-trash3' viewBox='0 0 16 16'>
+                                            <path d='M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z'/>
+                                          </svg></button>
 											</td>";
                                         echo "</tr>";
                                         $index++;
