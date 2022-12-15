@@ -76,7 +76,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-2 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
     <a href="index.php?page=main&controller=layouts&action=index"><span class="red">BIG</span><span class="green">FARM</span> 
   </div>
   <!-- Copyright -->

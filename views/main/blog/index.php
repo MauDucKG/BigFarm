@@ -89,20 +89,6 @@ include_once('views/main/navbar.php');
 
       </div>
     </section><!-- End Blog Section -->
-    <!-- <script>
-        $(document).ready(function() {
-            $(".text-dark .btn-dark").click(function() {
-                id = $(this).attr('id');
-                console.log("index.php?page=main&controller=detail_blog&id=" + id +"&action=index")
-                $.ajax({
-                    url: "index.php?page=main&controller=detail_blog&id=" + id +"&action=index",
-                    success: function(result) {
-                        $(".new").html(result);
-                    }
-                });
-            });
-        });
-    </script> -->
 </body>
 
 <?php
