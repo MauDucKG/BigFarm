@@ -19,9 +19,9 @@ include_once('views/main/navbar.php');
               foreach ($newses as $news) {
                 echo '
                   <article class="card mb-5">
-                    <div class="row">
+                    <div class="row mx-1 mt-3">
                         <div class="col-9">
-                            <h6 class="card-title mt-3 mx-3 p-2  fw-bold">
+                            <h6 class="card-title fw-bold">
                                 <a>' . $news->title . '</a>
                             </h6>
                             <div class="card-subtitle mt-3">
@@ -34,7 +34,7 @@ include_once('views/main/navbar.php');
                                 </small>
                             </div>
                         </div>
-                        <div class="col-3 text-center mt-3">
+                        <div class="col-3 text-center">
                             <button type="button" class="btn btn-dark">
                             Đọc thêm
                             </button>
@@ -71,7 +71,7 @@ include_once('views/main/navbar.php');
                 {
                   echo '
                   <div class="mb-1">
-                    <div><a>' . $news->title . '</a></div>
+                    <div class="fw-bold"><a>' . $news->title . '</a></div>
                     <small class="text-muted">
                         <time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time>
                     </small>
