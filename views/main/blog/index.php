@@ -5,7 +5,7 @@ include_once('views/main/navbar.php');
 <body>
     
     <!-- ======= Blog Section ======= -->
-    <section style="margin-top: 7.5%;">
+    <section id="blog" style="margin-top: 7.5%;">
     <div class="text-center fs-2 fw-bold">TIN TỨC</div>
       <div class="container mt-2">
 

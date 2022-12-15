@@ -65,6 +65,13 @@
         <!-- Grid column -->
       </div>
       <!-- Grid row -->
+      <div>
+        <h4>© 2022 - CÔNG TY TNHH BIGFARM VN </h4>
+
+      Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.HCM
+
+      Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại: (028) 3868 4857 - Mua hàng: (028) 7307 1441 - Email: cskh@yame.vn
+      </div>
     </div>
   <!-- Section: Links  -->
 
