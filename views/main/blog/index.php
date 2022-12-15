@@ -64,7 +64,7 @@ include_once('views/main/navbar.php');
 
             <div>
 
-              <p class="fs-5 fw-bold">Bài viết gần đây</p>
+              <p class="fs-5 fw-bold text-center">Bài viết gần đây</p>
               <div>
               <?php
                 foreach ($recent as $news)
