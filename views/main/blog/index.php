@@ -11,7 +11,7 @@ include_once('views/main/navbar.php');
 
         <div class="row">
 
-          <div class="col-lg-8">
+          <div class="col-lg-8" id="new">
             <!-- Entry -->
 
             <?php
@@ -19,10 +19,10 @@ include_once('views/main/navbar.php');
               foreach ($newses as $news) {
                 echo '
                   <article class="card mb-5">
-                    <div class="row mx-1 mt-3">
+                    <div class="row">
                         <div class="col-9">
-                            <h6 class="card-title fw-bold">
-                                <a>' . $news->title . '</a>
+                            <h6 class="card-title mt-3 mx-3 p-2  fw-bold">
+                            <div><a class="text-dark" href="index.php?page=main&controller=detail_blog&id='. $news->id .'&action=index">' . $news->title . '</a>
                             </h6>
                             <div class="card-subtitle mt-3">
                                 <small>
@@ -34,10 +34,9 @@ include_once('views/main/navbar.php');
                                 </small>
                             </div>
                         </div>
-                        <div class="col-3 text-center">
-                            <button type="button" class="btn btn-dark">
-                            Đọc thêm
-                            </button>
+                        <div class="col-3 text-center mt-3">
+                            <a class="btn btn-dark" href="index.php?page=main&controller=detail_blog&id='. $news->id .'&action=index">Đọc thêm</a>
+                            
                         </div>
                     </div>
                     <div class="mx-3 mb-3">
@@ -71,7 +70,8 @@ include_once('views/main/navbar.php');
                 {
                   echo '
                   <div class="mb-1">
-                    <div class="fw-bold"><a>' . $news->title . '</a></div>
+                    <div><a class="text-dark" href="index.php?page=main&controller=detail_blog&id='. $news->id .'&action=index">' . $news->title . '</a>
+                    </div>
                     <small class="text-muted">
                         <time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time>
                     </small>
@@ -90,6 +90,20 @@ include_once('views/main/navbar.php');
 
       </div>
     </section><!-- End Blog Section -->
+    <!-- <script>
+        $(document).ready(function() {
+            $(".text-dark .btn-dark").click(function() {
+                id = $(this).attr('id');
+                console.log("index.php?page=main&controller=detail_blog&id=" + id +"&action=index")
+                $.ajax({
+                    url: "index.php?page=main&controller=detail_blog&id=" + id +"&action=index",
+                    success: function(result) {
+                        $(".new").html(result);
+                    }
+                });
+            });
+        });
+    </script> -->
 </body>
 
 <?php
