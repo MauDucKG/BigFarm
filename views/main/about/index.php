@@ -56,10 +56,11 @@
       <div class="container py-2 mb-2" style="box-shadow: 0 5px 10px rgba(0,0,0,.2);">
          <div class="container px-4 px-lg-6 mt-5" style="margin-top: 500;">
             <div class="row m-5">
-               <div class="col-md-12 col-xl-7 ">
-                  <div class="text-center">
+            <div class="text-center">
                      <h class="m-5 " style="font-size: 50px">ABOUT US</h>
                   </div>
+               <div class="col-md-12 col-xl-7 ">
+                  
                   
                   <p style="font-size: 20px;">
                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident perspiciatis suscipit. Quibusdam, labore perferendis distinctio voluptatibus temporibus tempore quasi! Velit ex aperiam aut excepturi provident quam ipsa quibusdam ut.
