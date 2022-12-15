@@ -1,0 +1,12 @@
+	view/main/navbar.php
+<meta name="description" content="Big Farm - Trang trại quần áo: Website bán quần áo nam, nữ với những mẫu mã độc đáo, kiểu dáng đa dạng, phong phú, giá thành hợp lý hàng đầu Việt Nam ..." />
+	view/main/register/index.php
+<meta name="description" content="Big Farm - Trang trại quần áo: Đăng ký tài khoản nhận ngay ưu đãi khủng từ website bán quần áo nam, nữ hàng đầu Việt Nam với những mẫu mã độc đáo,  ..." />
+	view/main/login/index.php
+<meta name="description" content="Big Farm - Trang trại quần áo: Đăng nhập nhận ngay ưu đãi từ website bán quần áo nam, nữ hàng đầu Việt Nam với những mẫu mã độc đáo, kiểu dáng đa dạng, ..." />
+	view/admin/header.php
+<meta name="description" content="Big Farm - Trang trại quần áo: Fashion for all - Thời trang cho mọi người đang trên hành trình Nâng niu vóc dáng Việt khẳng định vị thế trên trường quốc tế..." />
+	
+
+
+
