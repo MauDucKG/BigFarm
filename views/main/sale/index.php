@@ -33,7 +33,7 @@ include_once('views/main/navbar.php');
    <div class="container py-2">
       <div class="container px-4 px-lg-6 mt-4" id = '#tab-user'>
         
-         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-3 justify-content-center">
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
 
             <?php 
             foreach ($products as $product) {
