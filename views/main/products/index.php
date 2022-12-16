@@ -61,6 +61,9 @@
                <div id="card" class="col mb-3"  >
                   <div class="card h-100 rounded-2" >
                      <!-- Product image-->
+                     <?php if ($product->sale > 0) {?>
+                        <div class="badge bg-warning text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">SALE  <?php echo  $product->sale; ?> %</div>
+                     <?php }?> 
                      <img class="card-img-top" src="/BigFarm/<?php echo $product->img; ?>" style="height: 300px;" alt="..." />
                      <!-- Product details-->
                      <div class="card-body p-4">
@@ -68,9 +71,14 @@
                            <!-- Product name-->
                            <h5 class="product-name fw-bolder"><?php echo $product->name;?></h5>
                            <!-- Product price-->
-                           <?php 
-                              echo number_format($product->price, 0, '', ',');
-                           ?><span class="money-unit"> đ</span> 
+                           <?php if ($product->sale > 0) {?>
+                              <span class="red"><?php echo number_format($product->price*(100-$product->sale)/100, 0, ',', '.'); ?> VNĐ</span></span> <span class="money-unit"></span> 
+                              <span class="text-muted text-decoration-line-through"><?php echo number_format($product->price, 0, ',', '.') ?> VNĐ</span>                      
+                           <?php }
+                              else {
+                           ?> 
+                              <span class=" "><?php echo number_format($product->price, 0, ',', '.') ?> VNĐ</span>    
+                           <?php }?>
                         </div>
                         <!-- Rating -->
                         <div class="text-center">
