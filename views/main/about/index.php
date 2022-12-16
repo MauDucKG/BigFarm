@@ -224,7 +224,7 @@
                   <h2 class=" ">
                      <strong>
                      </strong>
-                     <div class="align-middle m-2 text-center"><strong>Sale Marketing</strong></div>
+                     <div class="align-middle m-2 text-center"><strong>Bán hàng</strong></div>
                   </h2>
 
                   <img class="rounded-bottom" src="/BigFarm/assets/images/sale.jpg" alt="thiết kế thời trang" stlye="max-height: 195px;">
