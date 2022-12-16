@@ -33,13 +33,13 @@ include_once('views/main/navbar.php');
    <div class="container py-2">
       <div class="container px-4 px-lg-6 mt-4" id = '#tab-user'>
         
-            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+            <div id="card-content" class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
 
             <?php 
             foreach ($products as $product) {
                 if ($product->sale){
                     echo '
-                        <div class="col mb-3">
+                        <div id="card" class="col mb-3">
                         <div class="card h-100">
                             <div class="badge bg-warning text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">SALE '. $product->sale .'%</div>
                                 <!-- Product image-->
@@ -86,7 +86,94 @@ include_once('views/main/navbar.php');
          </div>
          
       </div>
+      <nav aria-label="Page navigation example">
+         <ul class="pagination justify-content-center">
+
+            <li class="page-item">
+               <a class="page-link previous-page" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+               <a class="page-link .next-page" href="#">Next</a>
+            </li>
+         </ul>
+      </nav>
    </div>
+   <script type="text/javascript">
+      function getPageList(totalPages, page, maxLength){
+         function range(start, end){
+            return Array.from(Array(end - start + 1), (_, i) => i + start);
+         }
+
+         var sideWidth = maxLength < 9 ? 1 : 2;
+         var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+         var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+
+         if(totalPages <= maxLength){
+            return range(1, totalPages);
+         }
+
+         if(page <= maxLength - sideWidth - 1 - rightWidth){
+            return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+         }
+
+         if(page >= totalPages - sideWidth - 1 - rightWidth){
+            return range(1, sideWidth).concat(0, range(totalPages- sideWidth - 1 - rightWidth - leftWidth, totalPages));
+         }
+
+         return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+      }
+
+      $(function(){
+      var numberOfItems = $("#card-content #card").length;
+      var limitPerPage = 9; //How many card items visible per a page
+      var totalPages = Math.ceil(numberOfItems / limitPerPage);
+      var paginationSize = 7; //How many page elements visible in the pagination
+      var currentPage;
+
+         function showPage(whichPage){
+            if(whichPage < 1 || whichPage > totalPages) return false;
+
+            currentPage = whichPage;
+
+            $("#card-content #card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
+
+            $(".pagination li").slice(1, -1).remove();
+
+            getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+               $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+               .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+               .attr({href: "javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
+            });
+
+            $(".previous-page").toggleClass("disable", currentPage === 1);
+            $(".next-page").toggleClass("disable", currentPage === totalPages);
+            return true;
+         }
+
+         $(".pagination").append(
+            $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Prev")),
+            $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href: "javascript:void(0)"}).text("Next"))
+         );
+
+         $("#card-content").show();
+         showPage(1);
+
+         $(document).on("click", ".pagination li.current-page:not(.active)", function(){
+            return showPage(+$(this).text());
+         });
+
+         $(".next-page").on("click", function(){
+            return showPage(currentPage + 1);
+         });
+
+         $(".previous-page").on("click", function(){
+            return showPage(currentPage - 1);
+         });
+      });
+   </script>
    <?php
 include_once('views/main/footer.php');
 ?>
