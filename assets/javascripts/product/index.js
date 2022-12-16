@@ -25,16 +25,16 @@ $(".btn-delete").click(function (e) {
 $(document).ready(function () {
   $('#tab-product').DataTable();
 });
-$("#form-add-product").submit(function (e) {
-  e.preventDefault();
+// $("#form-add-product").submit(function (e) {
+//   e.preventDefault();
 
-  //Write code to check if student id is existed!
-  //Camel case
-  var price = $("#form-add-product input[name='price']").val();
-  var sale = $("#form-add-product input[name='sale']").val();
-  if (price < 1000) {
-    alert("Giá phải lớn hơn 1000")
-  } else if (sale > 100 || sale < 0) {
-    alert("Sale không hợp lệ")
-  }
-});
+//   //Write code to check if student id is existed!
+//   //Camel case
+//   var price = $("#form-add-product input[name='price']").val();
+//   var sale = $("#form-add-product input[name='sale']").val();
+//   if (price < 1000) {
+//     alert("Giá phải lớn hơn 1000")
+//   } else if (sale > 100 || sale < 0) {
+//     alert("Sale không hợp lệ")
+//   }
+// });

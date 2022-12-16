@@ -39,30 +39,13 @@ require_once('views/admin/content_layouts.php'); ?>
 	<section class="content">
 		<div class="container-fluid text-center">
 			<div class="invoice p-3 mb-3">
-				<div class="row invoice-info">
-					<div class="col-sm-6 invoice-col">
-						<ul style="list-style: none;">
-							<li><a href="index.php?page=admin&controller=admin&action=index" class="fas fa-user-graduate"> Quản lý Thành viên</a></li>
-							<li><a href="index.php?page=admin&controller=comments&action=index" class="fas fa-comments"> Bình luận đánh giá</a></li>
-							<li><a href="index.php?page=admin&controller=user&action=index" class="fas fa-users-cog"> Liên hệ khách hàng</a>
-						</ul>
-					</div>
-					<!-- /.col -->
-					<div class="col-sm-6 invoice-col">
-						<ul style="list-style: none;">
-							<li><a href="index.php?page=admin&controller=products&action=index" class="fas fa-cube"> Quản lý sản phẩm</a></li>
-							<li><a href="index.php?page=admin&controller=news&action=index" class="fas fa-file"> Quản lý bài viết</a></li>
-							<li><a href="index.php?page=admin&controller=company&action=index" class="fas fa-newspaper"> Quản lý thông tin public</a>
-						</ul>
-					</div>
-					<!-- /.col -->
-				</div>
+				
 				<!-- /.row -->
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=admin&action=index" class="btn btn-primary">Quản lý Thành viên</a>
 						</div>
@@ -70,7 +53,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=user&action=index" class="btn btn-primary">Quản lý Khách hàng</a>
 						</div>
@@ -78,7 +61,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=products&action=index" class="btn btn-primary">Quản lý Sản phẩm</a>
 						</div>
@@ -86,7 +69,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=comments&action=index" class="btn btn-primary">Quản lý Bình luận</a>
 						</div>
@@ -94,7 +77,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=news&action=index" class="btn btn-primary">Quản lý Bài viết</a>
 						</div>
@@ -102,7 +85,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-md-12 col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="..." class="card-img-top" alt="...">
+						<!-- <img src="..." class="card-img-top" alt="..."> -->
 						<div class="card-body">
 							<a href="index.php?page=admin&controller=company&action=index" class="btn btn-primary">Quản lý Chi nhánh</a>
 						</div>
