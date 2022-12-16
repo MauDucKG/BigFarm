@@ -65,7 +65,7 @@
         <!-- Grid column -->
       </div>
       <!-- Grid row -->
-      <div>
+      <div class="text-center">
         <h4>© 2022 - CÔNG TY TNHH BIGFARM VN </h4>
 
       Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.HCM
@@ -76,7 +76,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-2 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);">
     <a href="index.php?page=main&controller=layouts&action=index"><span class="red">BIG</span><span class="green">FARM</span> 
   </div>
   <!-- Copyright -->

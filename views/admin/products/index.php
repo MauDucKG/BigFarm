@@ -53,13 +53,13 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <form id="form-add-product" action="index.php?page=admin&controller=products&action=add" enctype="multipart/form-data" method="post">
                                         <div class="modal-body">
                                             <div class="row">
-                                                <div class="col-6"><label>Tên sản phẩm</label><input class="form-control my-2" type="text" placeholder="Tên sản phẩm" name="name" /></div>
-                                                <div class="col-6"><label>Giá</label><input class="form-control my-2" type="number" placeholder="Giá" name="price" /></div>
+                                                <div class="col-6"><label>Tên sản phẩm</label><input class="form-control my-2" type="text" placeholder="Tên sản phẩm" name="name" required/></div>
+                                                <div class="col-6"><label>Giá</label><input class="form-control my-2" type="number" placeholder="Giá" name="price" required/></div>
                                             </div>
-
-                                            <div class="form-group"> <label>Mô tả</label> <textarea class="form-control my-2" name="description" rows="5"></textarea></div>
-                                            <div class="form-group"> <label>Nội dung</label> <textarea class="form-control my-2" name="content" rows="5"></textarea></div>
-                                            <div class="form-group"> <label>Hình ảnh </label>&nbsp <input class="form-control my-2" type="file" name="fileToUpload" id="fileToUpload" /></div>
+                                            <div class="form-group"><label>Sale</label><input class="form-control my-2" type="number" placeholder="Sale" name="sale" required/></div>
+                                            <div class="form-group"> <label>Mô tả</label> <textarea class="form-control my-2" name="description" rows="5" required></textarea></div>
+                                            <div class="form-group"> <label>Nội dung</label> <textarea class="form-control my-2" name="content" rows="5" required></textarea></div>
+                                            <div class="form-group"> <label>Hình ảnh </label>&nbsp <input class="form-control my-2" type="file" name="fileToUpload" id="fileToUpload" required/></div>
                                         </div>
                                         <div class="modal-footer">
                                             <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng</button>
@@ -107,10 +107,10 @@ require_once('views/admin/content_layouts.php'); ?>
                                                        " . str_replace(array("\r\n","\n\n","\n\r","\r\r", "\n", "\r"),'<br><br>',$product->content). "
                                                     </td>
                                                     <td >
-                                                        <img style=\"width: 60px; height:35px;\" src='$product->img'>
+                                                        <img style=\"width: 100px; height:100px;\" src='$product->img'>
                                                     </td>
                                                     <td>
-                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-bs-id='$product->id' data-bs-name='$product->name' data-bs-price='$product->price' data-bs-description='$product->description' data-bs-content='$product->content' data-bs-img='$product->img' data-bs-target='#EditProductModal' data-bs-toggle='modal'><svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='currentColor' class='bi bi-pencil-square' viewBox='0 0 16 16'>
+                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-bs-id='$product->id' data-bs-name='$product->name' data-bs-price='$product->price' data-bs-description='$product->description' data-bs-content='$product->content' data-bs-sale='$product->sale' data-bs-img='$product->img' data-bs-target='#EditProductModal' data-bs-toggle='modal'><svg xmlns='http://www.w3.org/2000/svg' width='13' height='13' fill='currentColor' class='bi bi-pencil-square' viewBox='0 0 16 16'>
                                                     <path d='M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z'/>
                                                     <path fill-rule='evenodd' d='M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z'/>
                                                   </svg></button>
@@ -133,14 +133,15 @@ require_once('views/admin/content_layouts.php'); ?>
                                             <div class="modal-body">
                                                 <div class="col-12"><label>ID</label> <input class="form-control my-2" type="text" placeholder="Name" name="id" readonly /></div>
                                                 <div class="row">
-                                                    <div class="col-6"><label>Tên sản phẩm</label><input class="form-control my-2" type="text" placeholder="Tên sản phẩm" name="name" /></div>
-                                                    <div class="col-6"><label>Giá</label><input class="form-control my-2" type="number" placeholder="Giá" name="price" /></div>
+                                                    <div class="col-6"><label>Tên sản phẩm</label><input class="form-control my-2" type="text" placeholder="Tên sản phẩm" name="name" required/></div>
+                                                    <div class="col-6"><label>Giá</label><input class="form-control my-2" type="number" placeholder="Giá" name="price" required/></div>
                                                 </div>
 
-                                                <div class="form-group"> <label>Mô tả</label> <textarea class="form-control my-2" name="description" rows="5"></textarea></div>
-                                                <div class="form-group"> <label>Nội dung</label> <textarea class="form-control my-2" name="content" rows="5"></textarea></div>
+                                                <div class="form-group"><label>Sale</label><input class="form-control my-2" type="number" placeholder="Sale" name="sale" required/></div>
+                                                <div class="form-group"> <label>Mô tả</label> <textarea class="form-control my-2" name="description" rows="5" required></textarea></div>
+                                                <div class="form-group"> <label>Nội dung</label> <textarea class="form-control my-2" name="content" rows="5" required></textarea></div>
                                                 <div class="form-group"><label>Url Hình ảnh </label><input class="form-control my-2" type="text" name="img" readonly /></div>
-                                                <div class="form-group"> <label> Hình ảnh </label>&nbsp <input type="file" class="form-control my-2" name="fileToUpload" id="fileToUpload" /></div>
+                                                <div class="form-group"> <label> Hình ảnh </label>&nbsp <input type="file" class="form-control my-2" name="fileToUpload" id="fileToUpload"/></div>
                                             </div>
                                             <div class="modal-footer"><button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Đóng</button><button class="btn btn-primary formedit" type="submit">Chỉnh sửa</button></div>
                                         </form>

@@ -61,13 +61,13 @@
             <h3 class="text-center"><span class="red">BIG</span><span class="green">FARM</span> hơn cả một thương hiệu.</h3>
               <p>
                   Slogan: <span class="fw-bold">Fashion for all - Thời trang cho mọi người</span>
-              <p class="fst-italic">
+              <p class="fst-italic justify-content">
                 Logo được lấy ý tưởng chính từ trái chanh vàng (lemon), tên gọi của nhóm với hình dáng cách điệu của trái chanh. Lemon tượng trưng cho sự đơn giản, không cầu kỳ, hướng tới hạnh phúc chân chính.
               </p>
               <p class="fst-italic">Thiết kế kết hợp từ 2 gam màu chủ đạo là vàng và cam: </p>
               <ul class="fst-italic">
-                  <li>Màu vàng là màu của ánh nắng dịu nhẹ, là màu của cuộc sống vui tươi, lạc quan, ấm áp, giàu sang và thịnh vượng. <span class="fw-bold">Đây là mục tiêu mà nhóm hướng đến.</span></li>
-                  <li>Màu cam biểu trưng cho sự phấn khởi, sáng tạo, hạnh phúc, quyết đoán và đam mê mãnh liệt. Ngoài ra, sắc cam còn là biểu tượng của sức mạnh, sự bền bỉ <span class="fw-bold">giống như tính cách cũng như tình thần của các thành viên trong nhóm.</span></li>
+                  <li class="justify-content">Màu vàng là màu của ánh nắng dịu nhẹ, là màu của cuộc sống vui tươi, lạc quan, ấm áp, giàu sang và thịnh vượng. <span class="fw-bold">Đây là mục tiêu mà nhóm hướng đến.</span></li>
+                  <li class="justify-content">Màu cam biểu trưng cho sự phấn khởi, sáng tạo, hạnh phúc, quyết đoán và đam mê mãnh liệt. Ngoài ra, sắc cam còn là biểu tượng của sức mạnh, sự bền bỉ <span class="fw-bold">giống như tính cách cũng như tình thần của các thành viên trong nhóm.</span></li>
               </ul>
               </p>
           </div>

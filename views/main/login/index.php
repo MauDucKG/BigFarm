@@ -11,7 +11,7 @@
 
 <body class="text-center">
 	<div class="form-signin w-100 m-auto">
-		<form action="index.php?page=main&controller=login&action=check" method="POST">
+		<form method="POST">
 			<img class="mb-4 border rounded-circle p-1" src="assets\images\team_logo.png" alt="" width="72" height="72">
 			<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 			<?php
@@ -32,7 +32,7 @@
 			<div class="checkbox my-3">
 				<p class="text-muted">Sign in as Normal user</p>
 			</div>
-			<button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+			<button class="w-100 btn btn-lg btn-primary" type="submit" name="submit-btn">Sign in</button>
 			<p class="mt-5 mb-3 text-muted">© Lemon team</p>
 		</form>
 	</div>

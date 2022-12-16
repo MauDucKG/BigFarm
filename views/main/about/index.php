@@ -66,8 +66,8 @@
             <div class="row m-5">
             <div class="text-center">
                      <h class="m-5 " style="font-size: 50px">ABOUT US</h>
-                  </div>
-               <div class="col-md-12 col-xl-7 ">
+            </div>
+               <div class="col-md-12 col-xl-7  justify-content">
                   
                   
                   <p style="font-size: 20px;">
@@ -95,10 +95,10 @@
          </div>
 
       </div>
-      <div class="text-center p-2" style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);" >
+      <div class="text-center p-2 mx-5" style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);" >
          <h1 class="">CÁC THÀNH VIÊN</h1>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, voluptatum sapiente numquam consequuntur atque est incidunt maxime, veniam quia eum cum magnam. Ad aliquam omnis accusantium voluptatibus, alias ut qui!</p>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam esse consequatur iure corrupti recusandae voluptatum quasi harum laudantium dolor ea animi, suscipit eos? Voluptatum quia quis odit neque repudiandae! Facere.</p>
+         <p class="justify-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, voluptatum sapiente numquam consequuntur atque est incidunt maxime, veniam quia eum cum magnam. Ad aliquam omnis accusantium voluptatibus, alias ut qui!</p>
+         <p class="justify-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam esse consequatur iure corrupti recusandae voluptatum quasi harum laudantium dolor ea animi, suscipit eos? Voluptatum quia quis odit neque repudiandae! Facere.</p>
       </div>
       <div style="height: 50px;">
 
@@ -118,7 +118,7 @@
                            <h5 class="product-name fw-bolder">PHẠM HOÀNG ĐỨC HUY</h5> 
                         </div>   
                         <!-- Rating -->
-                        <div class="">
+                        <div class="justify-content">
                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
                         </div>
                      </div>
@@ -136,7 +136,7 @@
                            <h5 class="product-name fw-bolder">GIANG TUẤN HIỀN</h5> 
                         </div>   
                         <!-- Rating -->
-                        <div class="">
+                        <div class="justify-content">
                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
                         </div>
                      </div>
@@ -154,7 +154,7 @@
                            <h5 class="product-name fw-bolder">VŨ ĐĂNG KHOA</h5> 
                         </div>   
                         <!-- Rating -->
-                        <div class="">
+                        <div class="justify-content">
                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
                         </div>
                      </div>
@@ -171,7 +171,7 @@
                            <h5 class="product-name fw-bolder">NGUYỄN MẬU MINH ĐỨC</h5> 
                         </div>   
                         <!-- Rating -->
-                        <div class="">
+                        <div class="justify-content">
                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
                         </div>
                      </div>
@@ -187,12 +187,12 @@
 
          <div class="row p-4">
             <div class="col-12">
-                  <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-dark text-center"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
+                  <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-dark text-center fs-1"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
                   </h1>
             </div>
             <div class="col-12 col-lg-3 col-md-6">
                   <div class="card rounded-2"  style="background-color: sandybrown;">
-                     <h3 class=" "><strong class="m-5">
+                     <h3 class="text-center"><strong class="m-5">
                               1</strong></h3>
                      <h2 class=" ">
                         <strong>
@@ -206,7 +206,7 @@
             </div>
             <div class="col-12 col-lg-3 col-md-6">
                   <div class="card rounded-2"  style="background-color: deepskyblue;">
-                     <h3 class=" "><strong class="m-5">
+                     <h3 class="text-center"><strong class="m-5">
                               2</strong></h3>
                      <h2 class=" ">
                         <strong>
@@ -219,12 +219,12 @@
             </div>
             <div class="col-12 col-lg-3 col-md-6">
                <div class="card rounded-2"  style="background-color: darkseagreen;">
-                  <h3 class=" "><strong class="m-5">
+                  <h3 class="text-center"><strong class="m-5">
                            3</strong></h3>
                   <h2 class=" ">
                      <strong>
                      </strong>
-                     <div class="align-middle m-2 text-center"><strong>Bán hàng</strong></div>
+                     <div class="align-middle m-2 text-center"><strong>Bán lẻ</strong></div>
                   </h2>
 
                   <img class="rounded-bottom" src="/BigFarm/assets/images/sale.jpg" alt="thiết kế thời trang" stlye="max-height: 195px;">
@@ -233,7 +233,7 @@
             </div>
             <div class="col-12 col-lg-3 col-md-6">
                   <div class="card rounded-2"  style="background-color: sandybrown;">
-                     <h3 class=" "><strong class="m-5">
+                     <h3 class="text-center"><strong class="m-5">
                               4</strong></h3>
                      <h2 class=" ">
                         <strong>
