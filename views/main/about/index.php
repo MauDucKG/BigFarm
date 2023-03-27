@@ -71,10 +71,10 @@
                   
                   
                   <p style="font-size: 20px;">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident perspiciatis suscipit. Quibusdam, labore perferendis distinctio voluptatibus temporibus tempore quasi! Velit ex aperiam aut excepturi provident quam ipsa quibusdam ut.
+                  Chúng tôi - Nhóm Lemon gồm 4 chàng trai với phong cách chạy deadline lãng tử với những đam mê khác nhau nhưng cùng chung mục tiêu hoàn thành project một cách trọn vẹn nhất.
                   </p>
                   <p>
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut doloribus ipsa id nostrum expedita quia. Explicabo, esse possimus. Consequatur officiis quibusdam voluptatibus sit rem explicabo eligendi perspiciatis. Blanditiis, a?
+                  Đội ngũ IT vẫn đang ngày đêm cố gắng hoàn nhằm đem lại cho khách hàng những trải nghiệm tuyệt vời nhất. Tuy nhiên vẫn không tránh khỏi một vài lỗi, mong quý khách nếu phát hiện vui lòng để lại comment hoặc gửi feedback về cho đội ngũ thông qua địa chỉ phía dưới đây. Chúng tôi luôn trân trọng các ý kiến đóng góp và phản hồi sớm nhất có thể!!!
                   </p>
                   <div class="align-items-center" >
                      <button class="btn btn-dark text-white m-2" style="font-size: 30px;" href="https://www.facebook.com/profile.php?id=100043539343788">View fanpage 
