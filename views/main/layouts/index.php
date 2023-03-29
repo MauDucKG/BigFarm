@@ -78,11 +78,10 @@
       <div class="container" data-aos="fade-up "  style="box-shadow: 0 5px 10px rgba(0,0,0,.2);">
 
         <div class="row content" >
-          <span style="box-shadow: 0 5px 3px rgba(0,0,0,.2); ">
-            <h2 class="text-center mt-3" ><span class="red">BIG</span><span class="green">FARM</span> - <span class="fw-bold">NÂNG NIU VÓC DÁNG VIỆT</span></h2><br>
-          </span>
-
-          <h3 class="text-center mt-3"><span class="red">BIG</span><span class="green">FARM</span> hơn cả một thương hiệu.</h3>
+          <div class="container px-4 px-lg-6">
+          <div class="row m-4">
+              <h2 class="text-center mt-3" ><span class="red">BIG</span><span class="green">FARM</span> - <span class="fw-bold">NÂNG NIU VÓC DÁNG VIỆT</span></h2><br>
+        
           <p class = "text-center">
             <span class="fw-bold">Fashion for all - Thời trang cho mọi người</span>
           <p class="fst-italic justify-content">
@@ -95,10 +94,11 @@
           <p class="fst-italic">Thiết kế kết hợp từ 2 gam màu chủ đạo là vàng và cam: </p>
             <ul class="fst-italic">
                 <li class="justify-content">Màu vàng là màu của ánh nắng dịu nhẹ, là màu của cuộc sống vui tươi, lạc quan, ấm áp, giàu sang và thịnh vượng. <span class="fw-bold">Đây là mục tiêu mà nhóm hướng đến.</span></li>
-                <br>
                 <li class="justify-content">Màu cam biểu trưng cho sự phấn khởi, sáng tạo, hạnh phúc, quyết đoán và đam mê mãnh liệt. Ngoài ra, sắc cam còn là biểu tượng của sức mạnh, sự bền bỉ <span class="fw-bold">giống như tính cách cũng như tình thần của các thành viên trong nhóm.</span></li>
             </ul>
           </p>
+          </div>
+          </div>
         </div>
       </div>
     </section><!-- End About Us Section -->

@@ -63,7 +63,7 @@
    <main>
       <div class="container py-2 mb-2" style="box-shadow: 0 5px 10px rgba(0,0,0,.2);">
          <div class="container px-4 px-lg-6 mt-5" style="margin-top: 500;">
-            <div class="row m-5">
+            <div class="row m-4">
             <div class="text-center">
                      <h class="m-5 " style="font-size: 50px">ABOUT US</h>
             </div>
