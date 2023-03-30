@@ -1,9 +1,9 @@
 See more here: http://bigfarm.ezyro.com
 
-##Project Name
+## Project Name
 BigFarm is an e-commerce website that sells a wide range of clothing products. We offer high-quality clothing items for men, women, and children. Our website provides customers with an easy-to-use platform to browse and purchase clothing items from the comfort of their own homes.
 
-##File Structure
+## File Structure
 Describe the file structure of your project here.
 
 project/
@@ -15,7 +15,7 @@ project/
 ├── routes.php
 └── index.php
 
-##Installation and Usage
+## Installation and Usage
 To install and use the BigFarm project, please follow these instructions:
 
 ### 1. Install XAMPP on your computer if you haven't already done so.
@@ -34,7 +34,7 @@ git clone https://github.com/MauDucKG/BigFarm.git
 
 ### 7. Once connected to the database, you can interact with it using SQL queries and the appropriate PHP functions.
 
-##MVC Model
+## MVC Model
 Explain the MVC model used in your project here.
 
 MVC stands for Model-View-Controller, which is a design pattern commonly used in web development. In this pattern, the application is divided into three interconnected components:
