@@ -1,4 +1,4 @@
-<?php 
+<?php
    include_once('views/main/navbar.php');
 ?>
 
@@ -30,228 +30,266 @@
    </div>
 
 <section id="about-page">
-
-<style>
-   .card:hover{
-      box-shadow: 10px 10px 5px lightblue;
-      background-color: gainsboro;
-   }
-   @media screen and (max-width: 1199px) {
-      #about-image{
-         display: none;
-      }      
-   }
-   @media only screen and (max-width : 992px) {
-      #about-image{
-         display: none;
-      }
-   }
-   @media only screen and (max-width : 575px) {
-
-   }
-   @media only screen and (max-width : 830px) {
-
-   }
-   @media screen and (max-width: 540px) {
-      #advertisement-product{
-         margin-top: 120px;
-      }
-
-
-   }
-</style>
-   <main>
-      <div class="container py-2 mb-2" style="box-shadow: 0 5px 10px rgba(0,0,0,.2);">
-         <div class="container px-4 px-lg-6 mt-5" style="margin-top: 500;">
-            <div class="row m-4">
-            <div class="text-center">
-                     <h class="m-5 " style="font-size: 50px">ABOUT US</h>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto&display=swap');
+        .about--info{
+            margin:0 auto;
+        }
+        .text--italic{
+            font-family: 'Kaushan Script', cursive;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .text--bold{
+            margin-top:25px;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 45px;
+        }
+        .text--bold:before{
+            content:'';
+            position: absolute;
+            height: 3px;
+            width: 65px;
+            background: linear-gradient(45deg, #00853e, #50c878);
+            bottom:0;
+        }
+        .para--short{
+            display: block;
+            max-width: 100vw;
+            margin-top: 50px;
+            font-size: 15px;
+            color: #b3b3b3;
+            text-align: center;
+            white-space: pre-line;
+            width: 965px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card--personal{
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            background: hsla(39, 100%, 77%, 1);
+            background: linear-gradient(45deg, #00853e, #50c878);
+        }
+        .card--personal-info{
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 0 30px;
+            position: relative;
+            z-index: 99;
+            background-color: #242628;
+        }
+        .card-img{
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            transition: 0.25s;
+            margin: 0 auto;
+            transform: translateY(25px);
+            border-radius: 50%;
+            border: 2px solid #f2726a;
+            cursor: pointer;
+        }
+        .card-img:hover {
+            width: 100%;
+            height: 100%;
+            border-radius: unset;
+            border: unset;
+            transform: unset;
+        }
+        .card__img:hover {
+            width: 100%;
+            height: 100%;
+            border-radius: unset;
+            border: unset;
+            transform: unset;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .name {
+            margin-top: 40px;
+            color:white;
+        }
+        .role {
+            color: #f2726a;
+        }
+        .card-social a {
+            text-decoration: none;
+            color: white;
+            margin: 25px 20px 40px;
+            display: inline-block;
+            font-size: 25px;
+            transition: 0.25s;
+        }
+        .youtube:hover{
+            color: #FF0000;
+        }
+        .facebook:hover{
+            color: #0881ED;
+        }
+        .github:hover{
+            color:black;
+        }
+        .about--service .text--bold:before{
+            background: linear-gradient(45deg, #860025, #C85061);
+        }
+        .about-container{
+            margin-top: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap;
+            width: 100vw;
+        }
+        .service--item{
+            margin: 10px;
+            width: 585px;
+            height: 303px;
+            border-radius: 30px;
+            background-position: bottom bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            font-size: 36px;
+            font-weight:600;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration:0.5s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+            transition-property: all;
+            cursor: pointer;
+        }
+        .first-item{
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 0, 37, 0.7)), to(rgba(200, 80, 97, 0.7))),
+                                url("/BigFarm/assets/images/consulting.jpg") ;
+        }
+        .second-item{
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 193, 236, 0.7)), to(rgba(80, 190, 200, 0.7))),
+                                url("/BigFarm/assets/images/designing.jpg") ;
+        }
+        .third-item{
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 134, 5, 0.7)), to(rgba(189, 200, 80, 0.7))),
+                                url("/BigFarm/assets/images/sale.jpg") ;
+        }
+        .fourth-item{
+            background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(134, 0, 98, 0.7)), to(rgba(200, 78, 178, 0.7))),
+                                url("/BigFarm/assets/images/consulting.jpg") ;
+        }
+        .first-item:hover{
+            background-image: unset;
+            background-color: #E0003E;
+        }
+        .second-item:hover{
+            background-image: unset;
+            background-color: #00AEEF;
+        }
+        .third-item:hover{
+            background-image: unset;
+            background-color: #EBEC41;
+        }
+        .fourth-item:hover{
+            background-image: unset;
+            background-color: #A12A9B;
+        }
+        @media screen and (min-width: 1024px){
+            .card--personal{
+                height: 500px;
+            }
+        }
+        @media screen and (max-width: 1023px){
+            .card--personal{
+                flex-wrap: wrap;
+            }
+            .card--personal-info{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <div class="about--info">
+        <div class="text--italic">Who we are</div>
+        <div class="text--bold">MEET OUR TEAM</div>
+        <div class="para--short">Chúng tôi - Nhóm Lemon gồm 4 chàng trai với phong cách chạy deadline lãng tử với những đam mê khác nhau nhưng cùng chung mục tiêu hoàn thành project một cách trọn vẹn nhất.
+        Đội ngũ IT vẫn đang ngày đêm cố gắng hoàn nhằm đem lại cho khách hàng những trải nghiệm tuyệt vời nhất. Tuy nhiên vẫn không tránh khỏi một vài lỗi, mong quý khách nếu phát hiện vui lòng để lại comment hoặc gửi feedback về cho đội ngũ thông qua địa chỉ phía dưới đây. Chúng tôi luôn trân trọng các ý kiến đóng góp và phản hồi sớm nhất có thể!!!
+        </div>
+        <div class="card--personal">
+            <div class="card--personal-info">
+                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <h2 class="name">Phạm Hoàng Đức Huy</h2>
+                <p class="role">Developer</p>
+                <div class="card-social">
+                    <a href="#" class="facebook" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-               <div class="col-md-12 col-xl-7  justify-content">
-                  
-                  
-                  <p style="font-size: 20px;">
-                  Chúng tôi - Nhóm Lemon gồm 4 chàng trai với phong cách chạy deadline lãng tử với những đam mê khác nhau nhưng cùng chung mục tiêu hoàn thành project một cách trọn vẹn nhất.
-                  </p>
-                  <p>
-                  Đội ngũ IT vẫn đang ngày đêm cố gắng hoàn nhằm đem lại cho khách hàng những trải nghiệm tuyệt vời nhất. Tuy nhiên vẫn không tránh khỏi một vài lỗi, mong quý khách nếu phát hiện vui lòng để lại comment hoặc gửi feedback về cho đội ngũ thông qua địa chỉ phía dưới đây. Chúng tôi luôn trân trọng các ý kiến đóng góp và phản hồi sớm nhất có thể!!!
-                  </p>
-                  <div class="align-items-center" >
-                     <button class="btn btn-dark text-white m-2" style="font-size: 30px;" href="https://www.facebook.com/profile.php?id=100043539343788">View fanpage 
-                     </button>
-                     <div class="m-3" style="font-size: 50px;">
-                        <i class="bi bi-facebook"></i> 
-                        <i class="bi bi-instagram" ></i>
-                        <i class="bi bi-twitter"></i>
-                     </div>
-
-                  </div>
-                  
-               </div>
-               <div class="col-md-12 col-xl-4 rounded-2 m-2 d-none d-lg-block d-print-block">
-                  <img id="about-image"  class="p-3" src="/BigFarm/assets/images/thoi-trang-nam.jpg" alt="hello">
-               </div>
-            </div>      
-         </div>
-
-      </div>
-      <div class="text-center p-2 mx-5" style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);" >
-         <h1 class="">CÁC THÀNH VIÊN</h1>
-         <p class="justify-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, voluptatum sapiente numquam consequuntur atque est incidunt maxime, veniam quia eum cum magnam. Ad aliquam omnis accusantium voluptatibus, alias ut qui!</p>
-         <p class="justify-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam esse consequatur iure corrupti recusandae voluptatum quasi harum laudantium dolor ea animi, suscipit eos? Voluptatum quia quis odit neque repudiandae! Facere.</p>
-      </div>
-      <div style="height: 50px;">
-
-      </div>
-      <div class="m-2">
-         <div class="row">
-
-            <div id="card-content" class=" row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
-               <div id="card" class="col mb-3" style="width: 25rem;">
-                  <div class="card rounded-2" >
-                     <!-- Product image-->
-                     <img class="card-img-top" src="/BigFarm/assets/images/consulting.jpg"  alt="..." />
-                     <!-- Product details-->
-                     <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="product-name fw-bolder">PHẠM HOÀNG ĐỨC HUY</h5> 
-                        </div>   
-                        <!-- Rating -->
-                        <div class="justify-content">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div id="card" class="col mb-3" style="width: 25rem;">
-                  <div class="card rounded-2">
-                     <!-- Product image-->
-                     <img class="card-img-top" src="/BigFarm/assets/images/designing.jpg"  alt="..." />
-                     <!-- Product details-->
-                     <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="product-name fw-bolder">GIANG TUẤN HIỀN</h5> 
-                        </div>   
-                        <!-- Rating -->
-                        <div class="justify-content">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div id="card" class="col mb-3" style="width: 25rem;">
-                  <div class="card rounded-2">
-                     <!-- Product image-->
-                     <img class="card-img-top" src="/BigFarm/assets/images/consulting.jpg"  alt="..." />
-                     <!-- Product details-->
-                     <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="product-name fw-bolder">VŨ ĐĂNG KHOA</h5> 
-                        </div>   
-                        <!-- Rating -->
-                        <div class="justify-content">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div id="card" class="col mb-3" style="width: 25rem;">
-                  <div class="card rounded-2">
-                     <!-- Product image-->
-                     <img class="card-img-top" src="/BigFarm/assets/images/sale.jpg" alt="..." />
-                     <!-- Product details-->
-                     <div class="card-body p-4">
-                        <div class="text-center">
-                           <!-- Product name-->
-                           <h5 class="product-name fw-bolder">NGUYỄN MẬU MINH ĐỨC</h5> 
-                        </div>   
-                        <!-- Rating -->
-                        <div class="justify-content">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur voluptatum ad itaque provident aut tempore voluptate vero quis sapiente, obcaecati, officiis expedita ipsam! Eveniet doloremque impedit fugiat, voluptates architecto neque.
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
+            <div class="card--personal-info">
+                <img src="/BigFarm/assets/images/designing.jpg" alt="" class="card-img">
+                <h2 class="name">Giang Tuấn Hiền</h2>
+                <p class="role">Developer</p>
+                <div class="card-social">
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-         </div>
-      </div>
-
-      <section style="background-color: white; box-shadow: 0 5px 10px rgba(0,0,0,.2);" onclick="window.location.href='/BigFarm/index.php?page=main&controller=products&action=index'">
-      <div class="align-left container" >
-
-         <div class="row p-4">
-            <div class="col-12">
-                  <h1 class="mbr-title mbr-fonts-style mbr-white mb-5 display-2 text-dark text-center fs-1"><strong>CÁC DỊCH VỤ CỦA CHÚNG TÔI</strong>
-                  </h1>
+            <div class="card--personal-info">
+                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <h2 class="name">Vũ Đăng Khoa</h2>
+                <p class="role">Developer</p>
+                <div class="card-social">
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-6">
-                  <div class="card rounded-2"  style="background-color: sandybrown;">
-                     <h3 class="text-center"><strong class="m-5">
-                              1</strong></h3>
-                     <h2 class=" ">
-                        <strong>
-                        </strong>
-                        <div class="align-middle m-2 text-center"><strong>Tư vấn </strong></div>
-                     </h2>
-
-                     <img class="rounded-bottom" src="/BigFarm/assets/images/consulting.jpg" alt="tư vấn thời trang">
-                  </div>
-                  <div style="height: 30px;"></div>
+            <div class="card--personal-info">
+                <img src="/BigFarm/assets/images/consulting.jpg" alt="" class="card-img">
+                <h2 class="name">Nguyễn Mậu Minh Đức</h2>
+                <p class="role">Developer</p>
+                <div class="card-social">
+                    <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
-            <div class="col-12 col-lg-3 col-md-6">
-                  <div class="card rounded-2"  style="background-color: deepskyblue;">
-                     <h3 class="text-center"><strong class="m-5">
-                              2</strong></h3>
-                     <h2 class=" ">
-                        <strong>
-                        </strong>
-                        <div class="align-middle m-2 text-center"><strong>Thiết kế</strong></div>
-                     </h2>
-                     <img class="rounded-bottom" src="/BigFarm/assets/images/designing.jpg" alt="thiết kế thời trang">
-                  </div>
-                  <div style="height: 30px;"></div>
+        </div>
+        <div class="about--service">
+            <div class="text--italic">What we do</div>
+            <div class="text--bold">OUR SERVICE</div>
+            <div class="para--short">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima, blanditiis eveniet officiis non et cumque tenetur quis. Adipisci quae laudantium, repudiandae fuga alias accusantium temporibus doloribus quisquam eligendi iure!
             </div>
-            <div class="col-12 col-lg-3 col-md-6">
-               <div class="card rounded-2"  style="background-color: darkseagreen;">
-                  <h3 class="text-center"><strong class="m-5">
-                           3</strong></h3>
-                  <h2 class=" ">
-                     <strong>
-                     </strong>
-                     <div class="align-middle m-2 text-center"><strong>Bán lẻ</strong></div>
-                  </h2>
-
-                  <img class="rounded-bottom" src="/BigFarm/assets/images/sale.jpg" alt="thiết kế thời trang" stlye="max-height: 195px;">
-               </div>
-               <div style="height: 30px;"></div>
+            <div class="about-container">
+                <div class="service--item first-item">TƯ VẤN</div>
+                <div class="service--item second-item">THIẾT KẾ</div>
+                <div class="service--item third-item">BÁN LẺ</div>
+                <div class="service--item fourth-item">HOÁ TRANG</div>
             </div>
-            <div class="col-12 col-lg-3 col-md-6">
-                  <div class="card rounded-2"  style="background-color: sandybrown;">
-                     <h3 class="text-center"><strong class="m-5">
-                              4</strong></h3>
-                     <h2 class=" ">
-                        <strong>
-                        </strong>
-                        <div class="align-middle m-2 text-center"><strong>Hóa trang</strong></div>
-                     </h2>
-
-                     <img class="rounded-bottom" src="/BigFarm/assets/images/consulting.jpg" alt="tư vấn thời trang">
-                  </div>
-                  <div style="height: 30px;"></div>
-            </div>
-      </div>
-   </section>
-
-   </main>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4ccf3877a2.js" crossorigin="anonymous"></script>
 </section>
 
 <?php
    include_once('views/main/footer.php');
 ?>
-
