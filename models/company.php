@@ -7,14 +7,18 @@ class Company
     public $address;
     public $createAt;
     public $updateAt;
+    public $phone;
+    public $gmail;
 
-    public function __construct($id, $name, $address, $createAt, $updateAt)
+    public function __construct($id, $name, $address, $createAt, $updateAt, $phone, $gmail)
     {
         $this->id = $id;
         $this->name = $name;
         $this->address = $address;
         $this->createAt = $createAt;
         $this->updateAt = $updateAt;
+        $this->phone = $phone;
+        $this->gmail = $gmail;
     }
 
     static function getAll()
@@ -28,7 +32,9 @@ class Company
                 $company['name'],
                 $company['address'],
                 $company['createAt'],
-                $company['updateAt']
+                $company['updateAt'],
+                $company['phone'],
+                $company['gmail']
             );
         }
         return $companies;
@@ -44,7 +50,9 @@ class Company
             $result['name'],
             $result['address'],
             $result['createAt'],
-            $result['updateAt']
+            $result['updateAt'],
+            $result['phone'],
+            $result['gmail']
         );
         return $company;
     }
@@ -54,7 +62,7 @@ class Company
         $db = DB::getInstance();
         $req = $db->query(
             "
-            INSERT INTO company (name, address, createAt, updateAt)
+            INSERT INTO company (name, address, createAt, updateAt, phone, gmail)
             VALUES ('$name', '$address', NOW(), NOW())
             ;"
         );

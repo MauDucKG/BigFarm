@@ -16,25 +16,39 @@ include_once('views/main/navbar.php');
         // href="https://goo.gl/maps/dyhKkLf4aSUYmhQo7" target="_blank"
             foreach ($companies as $company) {
                 echo '
-                <div class="col-3 container">
+                <div class="col-lg-2 col-6 my-4 container">
                     <div class="fs-5 fw-bold">CHI NHÁNH</div>
                     <div>'. $company->name.'</div>
                 </div>
                 ';
                 echo '
-                <div class="col-5 container">
+                <div class="col-lg-5 col-6 my-4 container">
                     <div class="fs-5 fw-bold">ĐỊA CHỈ</div>
                     <div>
-                        <a class="location">'
+                        <p class="location">'
                         . $company->address .
-                    '   </a>
+                    '   </p>
                     </div>
                 </div>
                 ';
                 echo '
-                <div class="col-4 container">
+                <div class="col-lg-2 col-6 my-4 container">
                     <div class="fs-5 fw-bold">SỐ ĐIỆN THOẠI</div>
-                    <div class="phone">0123456789</div>
+                    <div>
+                    <p class="location">'
+                    . $company->phone .
+                '   </p>
+                </div>
+                </div>
+                ';
+                echo '
+                <div class="col-lg-3 col-6 my-4 container">
+                    <div class="fs-5 fw-bold">GMAIL</div>
+                    <div>
+                    <p class="location">'
+                    . $company->gmail .
+                '   </p>
+                </div>
                 </div>
                 ';
             }
@@ -48,7 +62,7 @@ include_once('views/main/navbar.php');
                 <iframe class="w-100"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.493927847166!2d106.65859895088279!3d10.77343116215605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3bcdf754b%3A0x6dfcdbc4e685b7bc!2zS2hvYSBLaG9hIGjhu41jIHbDoCBL4bu5IHRodeG6rXQgTcOheSB0w61uaCAtIEEzLCAyNjggTMO9IFRoxrDhu51uZyBLaeG7h3QsIFBoxrDhu51uZyAxNCwgUXXhuq1uIDEwLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1671071682951!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-lg-6 col-12 my-4" >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8741474395697!2d105.78200869999999!3d21.0377211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454caaf2b115f%3A0xc05b77c8a5f461ae!2zxJDhuqFpIGjhu41jIFF14buRYyBnaWEgSMOgIE7hu5lpLCBE4buLY2ggVuG7jW5nIEjhuq11LCBD4bqndSBHaeG6pXksIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1671072331789!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8741474395697!2d105.78200869999999!3d21.0377211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454caaf2b115f%3A0xc05b77c8a5f461ae!2zxJDhuqFpIGjhu41jIFF14buRYyBnaWEgSMOgIE7hu5lpLCBE4buLY2ggVuG7jW5nIEjhuq11LCBD4bqndSBHaeG6pXksIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1671072331789!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             
             </div>
