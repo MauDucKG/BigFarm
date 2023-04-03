@@ -1,2 +1,2 @@
 <?php
-  echo 'Có lỗi xảy ra!';
+  echo 'Có lỗi xảy ra thiệt nè!';
