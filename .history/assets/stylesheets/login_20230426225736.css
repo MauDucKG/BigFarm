@@ -22,10 +22,12 @@ body{
 .box{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    padding: 40px 20px 30px 20px;
-    height: 710px;
-    width: 450px;
+    padding: 60px 20px 30px 20px;
+    height: 50px;
+    width: 350px;
     background-color: rgba(255, 220, 220, 0.4);
     border-radius: 30px;
     -webkit-backdrop-filter: blur(15px);
@@ -141,25 +143,4 @@ i{
     border-radius: 10px;
     box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
     transition: .5s ease-in-out;
-}
-.name-box{
-    display: flex;
-    column-gap: 10px;
-}
-.name-box .input-box{
-    width: 100%;
-}
-.name-box .input-field{
-    width: 100%;
-}
-
-.gender-box{
-    display: flex;
-    column-gap: 10px;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    color: #040404;
-}
-.gender-container{
-    width: 25%;
 }

@@ -23,8 +23,8 @@ body{
     display: flex;
     flex-direction: row;
     position: relative;
-    padding: 40px 20px 30px 20px;
-    height: 710px;
+    padding: 60px 20px 30px 20px;
+    height: 700px;
     width: 450px;
     background-color: rgba(255, 220, 220, 0.4);
     border-radius: 30px;
@@ -153,13 +153,13 @@ i{
     width: 100%;
 }
 
-.gender-box{
+.name-box{
     display: flex;
     column-gap: 10px;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    color: #040404;
 }
-.gender-container{
-    width: 25%;
+.name-box .input-box{
+    width: 100%;
+}
+.name-box .input-field{
+    width: 100%;
 }

@@ -71,7 +71,7 @@
                     <div class="input-field">
                         <input type="submit" class="input-submit" value="Sign Up">
                     </div>
-                    <p style="text-align:center;">Already have an account? <a href="index.php?page=main&controller=login&action=index">Sign In</a></p>
+                    <p>Already have an account?. <a href="views/main/register/index.php">Sign In</a></p>
                 </div>
           </div>
         </form>

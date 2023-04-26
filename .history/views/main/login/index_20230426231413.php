@@ -18,7 +18,7 @@
                 <div class="top-header">
                     <img src="assets/images/team_logo.png" alt="" width="72" height="72">
                     <h3>Sign In</h3>
-                    <small>Welcome Back</small>
+                    <small>Welcome back</small>
                 </div>
                     <?php
 			            if (isset($err)) {
@@ -47,7 +47,7 @@
                     <div class="input-field">
                         <input type="submit" class="input-submit" value="Sign In" name="submit-btn">
                     </div>
-                    <p style="text-align:center;">Don't have an Account? <a href="index.php?page=main&controller=register&action=index">Sign Up</a></p>
+                    <p style="text-align:center;">Already have an account? <a href="index.php?page=main&controller=login&action=index">Sign In</a></p>
                 </div>
           </div>
             </form>
