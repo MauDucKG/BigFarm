@@ -155,17 +155,12 @@ i{
 
 .gender-box{
     display: flex;
-    /* column-gap: 40px; */
-    /* justify-content: center;
-    align-items: center; */
+    column-gap: 10px;
+    justify-content: space-evenly;
     margin-top: 10px;
     color: #040404;
-    width: 100%;
 }
 .gender-container{
     width: 100%;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

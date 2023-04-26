@@ -1,6 +1,4 @@
-<?php
-   include_once('views/main/navbar.php');
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -163,7 +163,7 @@ i{
     width: 100%;
 }
 .gender-container{
-    width: 100%;
+    width: 50%;
     height: 50px;
     display: flex;
     justify-content: center;
