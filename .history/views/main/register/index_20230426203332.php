@@ -209,19 +209,6 @@ i{
                                 </div>
                          </div>
                     </div>
-                    <div class="row py-1">
-					<div class="col">
-						<label class="">Giới tính:</label>
-					</div>
-					<div class="col">
-						<input class="form-check-input" type="radio" name="gender" value="1">
-						<label class="form-check-label">Nam</label>
-					</div>
-					<div class="col">
-						<input class="form-check-input" type="radio" name="gender" value="0">
-						<label class="form-check-label">Nữ</label>
-					</div>
-				</div>
                         <!-- <div class="input-field">
                             <input type="text" class="input-box" id="regUser" required>
                             <label for="regUser">Telephone number</label> -->

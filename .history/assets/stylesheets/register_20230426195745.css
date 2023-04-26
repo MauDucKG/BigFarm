@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body{
-    background: url("/BigFarm/assets/images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background: url("https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2304&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,3 +153,4 @@ i{
 .name-box .input-field{
     width: 100%;
 }
+    </style>

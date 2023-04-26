@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body{
-    background: url("/BigFarm/assets/images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background: url("assets/images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -152,3 +153,4 @@ i{
 .name-box .input-field{
     width: 100%;
 }
+    </style>

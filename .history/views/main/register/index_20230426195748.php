@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Register</title>
 	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
-	<link rel="stylesheet" href="assets/stylesheets/register.css">
+	<link rel="stylesheet" href="./../assets/stylesheets/register.css">
     <script src="https://kit.fontawesome.com/4ccf3877a2.js" crossorigin="anonymous"></script>
     <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
@@ -169,7 +169,6 @@ i{
 <body>
     <div class="wrapper">
         <div class="box">
-        <form action="index.php?page=main&controller=register&action=submit" method="POST" class="text-right">
             <div class="register-box" id="regUser">
                 <div class="top-header">
                     <img src="assets/images/team_logo.png" alt="" width="72" height="72">
@@ -179,28 +178,28 @@ i{
                 <div class="input-group">
                     <div class="name-box">
                         <div class="input-field">
-                            <input type="text" class="input-box" id="fname" name="fmane" required>
+                            <input type="text" class="input-box" id="regUser" required>
                             <label for="regUser">First Name</label>
                         </div>
                         <div class="input-field">
-                            <input type="text" class="input-box" id="lname" name="lname" required>
+                            <input type="text" class="input-box" id="regUser" required>
                             <label for="regUser">Last Name</label>
                         </div>
                     </div>
                     <div class="input-field">
-                        <input type="text" class="input-box" id="age" name="age" required>
+                        <input type="text" class="input-box" id="regUser" required>
                         <label for="regUser">Age</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" class="input-box" id="phone" name="phone" required>
+                        <input type="text" class="input-box" id="regUser" required>
                         <label for="regUser">Tel</label>
                     </div>
                     <div class="input-field">
-                        <input type="text" class="input-box" id="email" name="email" required>
+                        <input type="text" class="input-box" id="regUser" required>
                         <label for="regUser">Email</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="input-box" id="pass" name="pass" required>
+                        <input type="password" class="input-box" id="regPassword" required>
                         <label for="regPassword">Password</label>
                          <div class="eye-area">
                                 <div class="eye-box" onclick="myRegPassword()">
@@ -209,19 +208,6 @@ i{
                                 </div>
                          </div>
                     </div>
-                    <div class="row py-1">
-					<div class="col">
-						<label class="">Giới tính:</label>
-					</div>
-					<div class="col">
-						<input class="form-check-input" type="radio" name="gender" value="1">
-						<label class="form-check-label">Nam</label>
-					</div>
-					<div class="col">
-						<input class="form-check-input" type="radio" name="gender" value="0">
-						<label class="form-check-label">Nữ</label>
-					</div>
-				</div>
                         <!-- <div class="input-field">
                             <input type="text" class="input-box" id="regUser" required>
                             <label for="regUser">Telephone number</label> -->
@@ -243,7 +229,6 @@ i{
                     </div>
                 </div>
           </div>
-        </form>
         </div>
     </div>
     <script>

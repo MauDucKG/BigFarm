@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 body{
-    background: url("/BigFarm/assets/images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background: url("https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2304&q=80");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body{
 }
 .top-header{
     text-align: center;
-    margin: 10px auto;
+    margin: 30px auto;
 }
 .top-header h3{
     font-size: 22px;
@@ -65,7 +65,6 @@ body{
     border-radius: 10px;
     padding: 7px 45px 0 20px;
     background: rgba(224, 223, 223, 0.6);
-    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     outline: none;
 }
@@ -141,14 +140,4 @@ i{
     border-radius: 10px;
     box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
     transition: .5s ease-in-out;
-}
-.name-box{
-    display: flex;
-    column-gap: 10px;
-}
-.name-box .input-box{
-    width: 100%;
-}
-.name-box .input-field{
-    width: 100%;
 }
