@@ -16,7 +16,7 @@
 
   <title>BIG FARM - Trang trại quần áo</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="" name="kwords">
 
   <!-- Logo -->
   <link href="assets/images/team_logo.png" rel="icon">
@@ -158,7 +158,7 @@
                 </ul>
                     <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
                 </ul>
-            </div>      
+            </div>
         </nav>
     </div>
-  </header><!-- End Header -->
+  </header><!-- End Head -->

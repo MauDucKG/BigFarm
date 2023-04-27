@@ -57,9 +57,11 @@ body{
     }
 }
 .poli-card{
+    margin-top: 55px;
+    margin-bottom: 55px;
     display: flex;
     width: 100vw;
-    height: 250px;
+    height: auto;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -104,4 +106,15 @@ body{
 }
 .policy-card:hover .policy-card__info-name{
     color: #c12828;
+}
+@media screen and (max-width: 1279px) {
+    .poli-card{
+        flex-direction: column;
+    }
+    .policy-card{
+        margin: 10px;
+    }
+    .wrapper{
+        height: 100vh;
+    }
 }

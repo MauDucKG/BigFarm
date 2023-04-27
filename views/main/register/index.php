@@ -48,12 +48,6 @@
                     <div class="input-field">
                         <input type="password" class="input-box" id="pass" name="pass" required>
                         <label for="regPassword">Password</label>
-                         <div class="eye-area">
-                                <div class="eye-box" onclick="myRegPassword()">
-                                    <i class="fa-regular fa-eye" id="eye-2"></i>
-                                    <i class="fa-regular fa-eye-slash" id="eye-slash-2"></i>
-                                </div>
-                         </div>
                     </div>
                     <div class="gender-box">
                         <div class="gender-container">

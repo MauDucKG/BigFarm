@@ -63,7 +63,7 @@ body{
     color: #040404;
     border: none;
     border-radius: 10px;
-    padding: 7px 45px 0 20px;
+    padding: 7px 20px 0 20px;
     background: rgba(224, 223, 223, 0.6);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
