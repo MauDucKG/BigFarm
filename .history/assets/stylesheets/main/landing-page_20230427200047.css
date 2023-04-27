@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    padding-top: 65px;
+}
+
+.wrapper{
+    /* background: url("/BigFarm/assets/images/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg"); */
+    width: 100vw;
+    height: calc(100vh - 65px);
+    font-family: 'Poppins',sans-serif;
+    object-fit: cover;
+    position: relative;
+}
+.wrapper img{
+    overflow: hidden;
+}
+
+.our-introduction{
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 220, 220, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 0px 30px 30px 0px;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
+.special-text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 48px;
+    text-align: center;
+}
+.intro-text{
+
+}

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    padding-top: 65px;
+}
+.wrapper{
+    background: url("/BigFarm/assets/images/photo-1558769132-cb1aea458c5e.avif");
+    width: 100vw;
+    height: 100vh;
+}

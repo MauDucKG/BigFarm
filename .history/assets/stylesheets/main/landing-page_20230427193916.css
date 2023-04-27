@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    padding-top: 65px;
+}
+.wrapper{
+    /* background: url("/BigFarm/assets/images/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg"); */
+    width: 100vw;
+    height: calc(100vh - 65px);
+    font-family: 'Poppins',sans-serif;
+    object-fit: cover;
+    position: relative;
+}
+.wrapper img{
+    overflow: hidden;
+}
+
+.our-introduction{
+    position: absolute;
+    top: 50%;
+    background-color: rgba(255, 220, 220, 0.4);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    left: 50%;
+    transfrom
+}

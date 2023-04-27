@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins',sans-serif;
+    padding-top: 65px;
+}
+.wrapper{
+    /* background: url("/BigFarm/assets/images/burgess-milner-OYYE4g-I5ZQ-unsplash.jpg"); */
+    width: 100vw;
+    height: calc(100vh - 65px);
+    font-family: 'Poppins',sans-serif;
+    object-fit: cover;
+}
+.wrapper img{
+    overflow: hidden;
+}
