@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "alternative-font";
+    src: url("assets/font/HelveticaNeue-ThinCond.otf");
+}
+body{
+    font-family: "alternative-font", sans-serif;
+}

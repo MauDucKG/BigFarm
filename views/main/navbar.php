@@ -26,6 +26,7 @@
   <link href="assets/stylesheets/style.css" rel="stylesheet">
   <link href="assets/stylesheets/stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/stylesheets/star_rating.css">
+  <link rel="stylesheet" href="assets/stylesheets/main/navbar.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
@@ -157,8 +158,7 @@
                 </ul>
                     <!-- <i class="bi bi-list mobile-nav-toggle"></i> -->
                 </ul>
-            </div>
-
+            </div>      
         </nav>
     </div>
   </header><!-- End Header -->
