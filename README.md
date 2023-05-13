@@ -4,6 +4,15 @@ See more here:
 
 ## Project Name
 BigFarm is an e-commerce website that sells a wide range of clothing products. We offer high-quality clothing items for men, women, and children. Our website provides customers with an easy-to-use platform to browse and purchase clothing items from the comfort of their own homes.
+<p align="center">
+    <a href="http://bigfarm.ezyro.com"><img src="./images/background.png"  height="400"/></a>  
+</p>
+<!-- ## Members -->
+
+## Technologies
++ Frontend: HTML,CSS, JS, PHP, Bootstrap frameword.
+
++ Backend: PHP
 
 ## File Structure
 Describe the file structure of your project here.
@@ -37,7 +46,10 @@ To install and use the BigFarm project, please follow these instructions:
 **7.** Once connected to the database, you can interact with it using SQL queries and the appropriate PHP functions.
 
 ## MVC Model
-Explain the MVC model used in your project here.
+
+<p align="center">
+    <a href=""><img src="./images/mvc.png"  height="400"/></a>  
+</p>
 
 MVC stands for Model-View-Controller, which is a design pattern commonly used in web development. In this pattern, the application is divided into three interconnected components:
 
